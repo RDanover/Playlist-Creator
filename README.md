@@ -19,17 +19,8 @@
 > * All project phases are to be submitted to this GitHub repository. You should modify this README file to reflect the different phases of the project. In addition, you should regularly hold sprint meetings with your group. You will need to hold one check-in meeting with your lab TA in addition to the final demo.
 
 ## Project Description
- > Your project description should summarize the project you are proposing. Be sure to include:
- > * Why is it important or interesting to you?
- > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
- >   * [toolname](link) - Short description
- > * What will be the input/output of your project? What are the features that the project provides?
- > 
- > This description should be in enough detail that the TA/instructor can determine the complexity of the project and if it is sufficient for the team members to complete in the time allotted. 
- > 
- > You also need to set up an empty project board by choosing the  “Automated kanban with review” option on Github. You should also have a Backlog and In testing columns added.
-
-
+> Project Description: Our Project is a Playlist maker where the user can add and delete songs to various playlists. They can also choose to play these songs, allowing them to > skip songs and shuffle songs. It will also give the user the option to see a summary of their music habits (similar to spotify wrapped). We are going to be using C++ as our 
+> language for the project. All Iutput and output will be done in the terminal, the songs wont actually play but will instead say "now playing <insert songname>"
 
  > ## Phase II
  > In addition to completing the "Class Diagram" section below, you will need to:
