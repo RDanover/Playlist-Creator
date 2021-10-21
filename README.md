@@ -19,8 +19,9 @@
 > * All project phases are to be submitted to this GitHub repository. You should modify this README file to reflect the different phases of the project. In addition, you should regularly hold sprint meetings with your group. You will need to hold one check-in meeting with your lab TA in addition to the final demo.
 
 ## Project Description
-> Project Description: Our Project is a Playlist maker where the user can add and delete songs to various playlists. They can also choose to play these songs, allowing them to > skip songs and shuffle songs. It will also give the user the option to see a summary of their music habits (similar to spotify wrapped). We are going to be using C++ as our 
+> Project Description: Our Project is a Playlist maker where the user can add and delete songs to various playlists. They can also choose to play these songs, allowing them to > skip songs and shuffle songs. The playlist will also be shown visually to the user by displaying the songs in a list, along with the artist that made the song. The user will also be able to name the playlist. It will also give the user the option to see a summary of their music habits (similar to spotify wrapped). We are going to be using C++ as our 
 > language for the project. All Iutput and output will be done in the terminal, the songs wont actually play but will instead say "now playing <insert songname>"
+ 
 
  > ## Phase II
  > In addition to completing the "Class Diagram" section below, you will need to:
