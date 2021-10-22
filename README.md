@@ -1,10 +1,10 @@
  > As you complete each section you **must** remove the prompt text. Every *turnin* of this project includes points for formatting of this README so keep it clean and keep it up to date. 
  > Prompt text is any lines beginning with "\>"
  > Replace anything between \<...\> with your project specifics and remove angle brackets. For example, you need to name your project and replace the header right below this line with that title (no angle brackets). 
-# \<Playlist Maker\>
+# Playlist Maker
  > Your author list below should include links to all members GitHub (remove existing author).
  
- > Authors: \<[Vishal Gondi](https://github.com/vgondi123)\> \<[Rachel Danover](https://github.com/RDanover)\>
+ > Authors: [Vishal Gondi](https://github.com/vgondi123) [Rachel Danover](https://github.com/RDanover) [Mariam Golwalla](https://github.com/mgolw001)
  
  > You will be forming a group of **FOUR** students and working on an interesting project. The project has 4 phases, each one with specific requirements. A list of proposed project ideas that have been successful in previous quarters is listed in the project specifications document on Canvas. You can select an idea from the list, start thinking about the features you will implement, what design patterns can help you implement them, and why. If you want to propose your own original idea, you will have to contact an instructor to discuss the project and obtain written permission before you submit your project proposal (Phase 1). Your project needs to implement at least two design patterns iteratively, which you will have to justify for later phases.The project work should be divided almost equally among team members and each member is expected to work on at least one design pattern (more than one partner may work on a pattern) and some of its test cases. You can of course help each other, but it needs to be clear who will be responsible for which patterns and for which features. Additionally, you are expected to follow Scrum patterns, specifically the use of a Scrum (Project) board, Sprints, and Scrum meetings. While Daily Scrums are not required we highly recommend you practice them too.
  
@@ -18,9 +18,8 @@
  > * Each member of the group must actively participate in the Github Project board and reviewing commited code.
 > * All project phases are to be submitted to this GitHub repository. You should modify this README file to reflect the different phases of the project. In addition, you should regularly hold sprint meetings with your group. You will need to hold one check-in meeting with your lab TA in addition to the final demo.
 
-## Project Description
-> Project Description: Our Project is a Playlist maker where the user can add and delete songs to various playlists. They can also choose to play these songs, allowing them to > skip songs and shuffle songs. The playlist will also be shown visually to the user by displaying the songs in a list, along with the artist that made the song. The user will also be able to name the playlist. It will also give the user the option to see a summary of their music habits (similar to spotify wrapped). We are going to be using C++ as our 
-> language for the project. All Iutput and output will be done in the terminal, the songs wont actually play but will instead say "now playing <insert songname>"
+## Phase 1 - Project Description
+> Project Description: Our Project is a Playlist maker where the user can add and delete songs to various playlists. They can also choose to play, skip, and shuffle songs. The user will input the song name and artist, and the playlist they created will be outputted. All these inputs and outputs will take place in the terminal. The user will be able to name the playlist and have the option to see a summary of their music habits (similar to Spotify Wrapped). We are going to be using C++ as our language for the project.The songs will not actually play but will instead say "Now playing <insert songname>." Our songs will be held in a linked list as pointers make it convenient to add and remove songs, and to change the order for the shuffle feature. We are interested in this project in particular as we all really like to listen to music, so this seems like a project we would enjoy building to kind of learn the code and algortithms behind our favorite streaming services. 
  
 
  > ## Phase II
