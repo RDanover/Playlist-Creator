@@ -19,7 +19,7 @@
 > * All project phases are to be submitted to this GitHub repository. You should modify this README file to reflect the different phases of the project. In addition, you should regularly hold sprint meetings with your group. You will need to hold one check-in meeting with your lab TA in addition to the final demo.
 
 ## Phase 1 - Project Description
-> Project Description: Our Project is a Playlist maker where the user can add and delete songs to various playlists. They can also choose to play, skip, and shuffle songs. The user will input the song name and artist, and the playlist they created will be outputted. All these inputs and outputs will take place in the terminal. The user will be able to name the playlist and have the option to see a summary of their music habits (similar to Spotify Wrapped). We are going to be using C++ as our language for the project.The songs will not actually play but will instead say "Now playing \<insert songname>\." Our songs will be held in a linked list as pointers make it convenient to add and remove songs, and to change the order for the shuffle feature. We are interested in this project in particular as we all really like to listen to music, so this seems like a project we would enjoy building to kind of learn the code and algortithms behind our favorite streaming services. 
+> Project Description: Our Project is a Playlist maker where the user can add and delete songs to various playlists. They can also choose to play, skip, and shuffle songs. The user will input the song name and artist, and the playlist they created will be outputted. All these inputs and outputs will take place in the terminal. The user will be able to name the playlist and have the option to see a summary of their music habits (similar to Spotify Wrapped). We are going to be using C++ as our language for the project.The songs will not actually play but will instead say "Now playing \<insert songname>\." Our songs will be held in a vector as pointers make it convenient to add and remove songs, and to change the order for the shuffle feature. We are interested in this project in particular as we all really like to listen to music, so this seems like a project we would enjoy building to kind of learn the code and algortithms behind our favorite streaming services. 
  
 
  > ## Phase II
@@ -30,6 +30,8 @@
  >   * These cards should represent roughly 7 days worth of development time for your team, taking you until your first meeting with the TA
 ## Class Diagram
  > Include a class diagram(s) for your project and a description of the diagram(s). Your class diagram(s) should include all the main classes you plan for the project. This should be in sufficient detail that another group could pick up the project this point and successfully complete it. Use proper UML notation (as discussed in the course slides).
+ > ![image](https://user-images.githubusercontent.com/60625627/139507433-81ecae58-21c9-498b-a335-b76d5a464180.png)
+
  
  > ## Phase III
  > You will need to schedule a check-in with the TA (during lab hours or office hours). Your entire team must be present. 
