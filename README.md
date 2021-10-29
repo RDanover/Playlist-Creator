@@ -30,7 +30,8 @@
  >   * These cards should represent roughly 7 days worth of development time for your team, taking you until your first meeting with the TA
 ## Class Diagram
  > Include a class diagram(s) for your project and a description of the diagram(s). Your class diagram(s) should include all the main classes you plan for the project. This should be in sufficient detail that another group could pick up the project this point and successfully complete it. Use proper UML notation (as discussed in the course slides).
- > ![image](https://user-images.githubusercontent.com/60625627/139507433-81ecae58-21c9-498b-a335-b76d5a464180.png)
+ > ![image](https://user-images.githubusercontent.com/60625627/139507582-d1bb9dbb-16e3-4521-b130-7c872cf56820.png)
+
 
  
  > ## Phase III
