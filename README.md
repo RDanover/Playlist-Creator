@@ -7,16 +7,12 @@ Project Description: Our Project is a Playlist maker where the user can add and 
 Importance of the Project
 
 Language
--
 
 Tools & Technologies
--
 
 Inputs & Outputs
--
 
 Feature
--
 
 ## Phase II
 
