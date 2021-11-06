@@ -5,7 +5,6 @@ Authors: [Vishal Gondi](https://github.com/vgondi123) [Rachel Danover](https://g
 Project Description: Our Project is a Playlist maker where the user can add and delete songs to various playlists. They can also choose to play, skip, and shuffle songs. The user will input the song name and artist, and the playlist they created will be outputted. All these inputs and outputs will take place in the terminal. The user will be able to name the playlist and have the option to see a summary of their music habits (similar to Spotify Wrapped). We are going to be using C++ as our language for the project.The songs will not actually play but will instead say "Now playing \<insert songname>\." Our songs will be held in a vector as pointers make it convenient to add and remove songs, and to change the order for the shuffle feature. We are interested in this project in particular as we all really like to listen to music, so this seems like a project we would enjoy building to kind of learn the code and algortithms behind our favorite streaming services.
 
 Importance of the Project
--
 
 Language
 -
