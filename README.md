@@ -1,29 +1,29 @@
 # Playlist Maker
-Authors: [Vishal Gondi](https://github.com/vgondi123) [Rachel Danover](https://github.com/RDanover) [Mariam Golwalla](https://github.com/mgolw001) [Seokha Kang](https://github.com/skang121)
+Authors: [Vishal Gondi](https://github.com/vgondi123), [Rachel Danover](https://github.com/RDanover), [Mariam Golwalla](https://github.com/mgolw001), [Seokha Kang](https://github.com/skang121)
 
 ## Phase 1 - Project Description
-Project Description: Our Project is a Playlist maker where the user can add and delete songs to various playlists. They can also choose to play, skip, and shuffle songs.  All these inputs and outputs will take place in the terminal. The user will be able to name the playlist and have the option to see a summary of their music habits (similar to Spotify Wrapped).The songs will not actually play but will instead say "Now playing \<insert songname>\." Our songs will be held in a vector as pointers make it convenient to add and remove songs, and to change the order for the shuffle feature. 
 
 ### Importance of the Project
-We are interested in this project in particular as we all really like to listen to music, so this seems like a project we would enjoy building to kind of learn the code and algortithms behind our favorite streaming services.
+Our Project is a Playlist maker where the user can add and delete songs to various playlists. We are interested in this project in particular as we all really like to listen to music, so this seems like a project we would enjoy building to kind of learn the code and algortithms behind our favorite streaming services.
 
 ### Language
 We are going to be using C++ as our language for the project.
 
 ### Tools & Technologies
+We are going to use Vim, Visual Studio, Xcode. All inputs and outputs will take place in the terminal.
 
 ### Inputs & Outputs
-The user will input the song name and artist, and the playlist they created will be outputted.
+The user will input the song name and artist, and the playlist they created will be outputted. The songs will not actually play but will instead say "Now playing \<insert songname>\."
 
 ### Feature
+Users can also choose to play, skip, and shuffle songs. In addition, they will be able to name the playlist and have the option to see a summary of their music habits (similar to Spotify Wrapped). Our songs will be held in a vector as pointers make it convenient to add and remove songs, and to change the order for the shuffle feature.
 
 ## Phase II
 
 Class Diagram
 ![image](https://user-images.githubusercontent.com/60625627/139507582-d1bb9dbb-16e3-4521-b130-7c872cf56820.png)
 
-
-Description of diagram: Our project will feature two interfaces, one where the user can see their playlists and choose to delete them or add more, this is also where users will access their playlists. This interface will hold a vector of playlist pointers making it a composition of the playlist class, a playlist can have one user but a user can have 0 to any positive integer number of playlists. Our second interface will be the playlist interface which will allow users to play the songs in their playlist, delete songs, hide them, or add new ones, they will also be able to view analytics about their listening habits. This interface will feature two vectors composed of song object pointers making the playlist class a composition of the song class. The song class is simply a leaf class and will not be directly accessed by the user. A playlist can have 0 to many songs, however (with our implementation) a song will only belong to one playlist.
+### Description of diagram: Our project will feature two interfaces, one where the user can see their playlists and choose to delete them or add more, this is also where users will access their playlists. This interface will hold a vector of playlist pointers making it a composition of the playlist class, a playlist can have one user but a user can have 0 to any positive integer number of playlists. Our second interface will be the playlist interface which will allow users to play the songs in their playlist, delete songs, hide them, or add new ones, they will also be able to view analytics about their listening habits. This interface will feature two vectors composed of song object pointers making the playlist class a composition of the song class. The song class is simply a leaf class and will not be directly accessed by the user. A playlist can have 0 to many songs, however (with our implementation) a song will only belong to one playlist.
  
  > ## Phase III
  > You will need to schedule a check-in with the TA (during lab hours or office hours). Your entire team must be present. 
