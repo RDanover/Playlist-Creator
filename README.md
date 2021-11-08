@@ -1,5 +1,5 @@
 # Playlist Maker
-Authors: [Vishal Gondi](https://github.com/vgondi123), [Rachel Danover](https://github.com/RDanover), [Mariam Golwalla](https://github.com/mgolw001), [Seokha Kang](https://github.com/skang121)
+Authors: [Vishal Gondi](https://github.com/vgondi123), [Rachel Danover](https://github.com/RDanover), [Mariam Golwalla](https://github.com/mgolw001), [Seokha Kang](https://github.com/seokhakangcs)
 
 ## Phase 1 - Project Description
 
