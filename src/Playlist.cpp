@@ -40,7 +40,7 @@ void Playlist::shuffle(){
 		shuffled_songs.push_back(songs.at(i));
 	}
 
-	for(int j = 0;j< shuffled_songs.size()-1;j++){
+	for(int j = 0;j< shuffled_songs.size()-1;j+=2){
 		temp = shuffled_songs.at(shuffled_songs.at(j+1);
 		shuffled_songs.at(j+1) = shuffled_songs.at(j);
 		shuffled_songs.at(j) = temp;
