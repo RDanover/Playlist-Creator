@@ -36,7 +36,7 @@ void Playlist::hide_unhide_song(){
 	else{
 		vector <int> indexes;
 		for(unsigned i<0;i<songs.size();i++){
-			if(songs.at(i).get_name().equals(songname)){
+			if(songs.at(i)->get_name().equals(songname)){
 				indexes.pushback(i);
 			}
 		}
@@ -51,7 +51,7 @@ void Playlist::hide_unhide_song(){
 				cin >> response;
 				cin.ignore();
 				if(response.equals("Y"){
-					songs.at(indexes.at(0)).set_hidden_status();
+					songs.at(indexes.at(0))->set_hidden_status();
 					cout<<songname<<" has been unhidden."<<endl;
 					return;
 				}
@@ -65,7 +65,7 @@ void Playlist::hide_unhide_song(){
 				cin >>response;
 				cin.ignore();
 				if(response.equals("Y"){
-					songs.at(indexes.at(0)).set_hidden_status();
+					songs.at(indexes.at(0))->set_hidden_status();
 					cout<<songname<<" had been hidden."<<endl;
 					return;
 				}
@@ -78,7 +78,7 @@ void Playlist::hide_unhide_song(){
 		else{
 			cout << "Multiple songs found with that same name:"<<endl;
 			for(int j =0;j<indexes.size();j++){
-				cout<<j+1<<". "<<songname<<" by "<<songs.at(indexes.at(j)).get_artist()<<endl;
+				cout<<j+1<<". "<<songname<<" by "<<songs.at(indexes.at(j))->get_artist()<<endl;
 			}
 			cout << "Please enter the number that corresponds to the song you would like to hide or unhide. Or enter 0 to return to menu"<<endl;
 			cin>>responseInt;
@@ -89,12 +89,12 @@ void Playlist::hide_unhide_song(){
 				return;
 			}
 			else{
-				if(songs.at(indexes.at(responseInt-1)).get_hidden_status()){
+				if(songs.at(indexes.at(responseInt-1))->get_hidden_status()){
                                 	cout << "Would you like to unhide "<< songname<<"? Enter Y for yes, enter N for no."<<endl;
                                 	cin >> response;
                                 	cin.ignore();
                                 	if(response.equals("Y"){
-                                 	       songs.at(indexes.at(0)).set_hidden_status();
+                                 	       songs.at(indexes.at(0))->set_hidden_status();
                                  	       cout<<songname<<" has been unhidden."<<endl;
                                  	       return;
                                 	}
@@ -108,7 +108,7 @@ void Playlist::hide_unhide_song(){
                                 	cin >>response;
                                 	cin.ignore();
                                 	if(response.equals("Y"){
-                                        	songs.at(indexes.at(0)).set_hidden_status();
+                                        	songs.at(indexes.at(0))->set_hidden_status();
                                         	cout<<songname<<" had been hidden."<<endl;
                                         	return;
                                 	}
