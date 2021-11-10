@@ -29,7 +29,7 @@ void User_Menu::access_playlist(){
 	cin >> input;	
 	cin.ignore();//clears the newline left in th stream incase getline is used after this
 	//check input then send user to the correct playlist
-	if( input < 0 || input > playlists.size()+1){
+	if( input < 0 || input > playlists.size()){
 		cout << "Invalid input please try again";
 		access_playlist();
 	}
