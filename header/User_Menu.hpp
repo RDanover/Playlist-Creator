@@ -13,6 +13,8 @@ class User_Menu {
     public:
 	User_Menu(){
 		playlists.push_back(new Playlist("SICK SONGS"));
+		playlists.push_back(new Playlist("Sad Songs"));
+		playlists.push_back(new Playlist("Happy Songs"));
 	}
 	void display_options();
 	void create_new_playlist();
