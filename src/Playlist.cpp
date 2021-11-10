@@ -1,12 +1,18 @@
-#include "Playlist.hpp"
+#include "../header/Playlist.hpp"
+#include <iostream>
 
+using namespace std;
 Playlist::Playlist(string n){
 	name = n;
 	length = 0;
+	songs.push_back(new Song("imagine","rebekah",1));
+	songs.push_back(new Song("Hello","world",2));
+	songs.push_back(new Song("claudia kishi", "The Lindas lindas",3.6));
 }
 
 void Playlist::display_options(){
-	//insert implementation
+	cout<<"Welcome to your playlist: "<<name<<endl;
+	return;
 }
 
 void Playlist::add_song(){

@@ -11,6 +11,9 @@ class User_Menu {
     private:
 	vector<Playlist*> playlists;	        
     public:
+	User_Menu(){
+		playlists.push_back(new Playlist("SICK SONGS"));
+	}
 	void display_options();
 	void create_new_playlist();
 	void delete_playlist();

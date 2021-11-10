@@ -1,7 +1,7 @@
-#include "User_Menu.hpp"
+#include "../header/User_Menu.hpp"
 #include <iostream>
 void User_Menu::display_options(){
-	//insert implementation
+	return;
 }
 
 void User_Menu::create_new_playlist(){
@@ -20,7 +20,7 @@ void User_Menu::access_playlist(){
 
 	//list playlists starting with a number to index them
 	for( unsigned i = 0 ; i < playlists.size(); i++ ){
-		cout << i+1 << ". " << playlists.at(i).get_playlist_name() << endl;
+		cout << i+1 << ". " << playlists.at(i)->get_playlist_name() << endl;
         }
 
 	//ask for user input
@@ -29,15 +29,15 @@ void User_Menu::access_playlist(){
 	cin >> input;	
 	cin.ignore();//clears the newline left in th stream incase getline is used after this
 	//check input then send user to the correct playlist
-	if( input < 0 || input > playlists.size+1){
-		cout << "Invalid input please try again"
+	if( input < 0 || input > playlists.size()+1){
+		cout << "Invalid input please try again";
 		access_playlist();
 	}
 	else if( input == 0){
 		display_options();
 	}
 	else{
-		playlist.at(input-1).display_options();
+		playlists.at(input-1)->display_options();
 	}
 
 }
