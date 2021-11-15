@@ -1,6 +1,7 @@
 #ifndef SONG_HPP
 #define SONG_HPP
 
+#include "Playable.hpp"
 #include <string>
 
 using namespace std;
