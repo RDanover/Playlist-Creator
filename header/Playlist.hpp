@@ -15,7 +15,7 @@ class Playlist {
 	double length;  
     public:
         Playlist(string);
-        string get_playlist_name(){return name;}
+        string get_name(){return name;}
 	double get_length(){return length;}
 	
 	void display_options();
