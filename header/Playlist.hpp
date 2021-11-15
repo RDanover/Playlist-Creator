@@ -1,13 +1,13 @@
 #ifndef PLAYLIST_HPP
 #define PLAYLIST_HPP
-
+#include "Playable.hpp"
 #include <vector>
 #include <string>
 #include "Song.hpp"
 
 using namespace std;
 
-class Playlist {
+class Playlist: public Playable{
     private:
 	vector<Song*> songs;
 	vector<Song*> shuffled_songs;      
@@ -15,10 +15,11 @@ class Playlist {
 	double length;  
     public:
         Playlist(string);
-        string get_playlist_name(){return name;}
-	double get_length(){return length;}
 	
+        string get_name(){return name;}
+	double get_length(){return length;}
 	void display_options();
+	
 	void add_song();
 	void delete_song();
 	void hide_unhide_song();
