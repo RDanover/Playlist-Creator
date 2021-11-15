@@ -1,6 +1,6 @@
 #ifndef PLAYLIST_HPP
 #define PLAYLIST_HPP
-
+#include "Playable.hpp"
 #include <vector>
 #include <string>
 #include "Song.hpp"
