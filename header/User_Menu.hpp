@@ -4,17 +4,19 @@
 #include <vector>
 #include <string>
 #include "Playlist.hpp"
+#include "Playable.hpp"
+#include "Song.hpp"
 
 using namespace std;
 
 class User_Menu {
     private:
-	vector<Playlist*> playlists;	        
+	vector<Playable*> user_playables;	        
     public:
 	User_Menu(){
-		playlists.push_back(new Playlist("SICK SONGS"));
-		playlists.push_back(new Playlist("Sad Songs"));
-		playlists.push_back(new Playlist("Happy Songs"));
+		user_playables.push_back(new Playlist("SICK SONGS"));
+		user_playables.push_back(new Playlist("Sad Songs"));
+		user_playables.push_back(new Playlist("Happy Songs"));
 	}
 	void display_options();
 	void create_new_playlist();
