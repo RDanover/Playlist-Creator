@@ -20,7 +20,7 @@ void User_Menu::access_playlist(){
 
 	//list playlists starting with a number to index them
 	for( unsigned i = 0 ; i < playlists.size(); i++ ){
-		cout << i+1 << ". " << playlists.at(i)->get_playlist_name() << endl;
+		cout << i+1 << ". " << playlists.at(i)->get_name() << endl;
         }
 
 	//ask for user input
