@@ -1,8 +1,9 @@
+#ifndef __ENVIRONMENT__
+#define __ENVIRONMENT__
 #include <string>
-
-class environment {
-    std::string name;
-    set_environment(std::string new_name){
-	this.name = new_name;
+class Enviroment{
+    std::string environment;
+    virtual void create_environment(std::string new_environment){
+	this.environment = new_environment;
 }
-
+#endif
