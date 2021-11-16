@@ -20,7 +20,7 @@ Users can also choose to play, skip, and shuffle songs. In addition, they will b
 
 ## Phase II
 
-Class Diagram
+###Class Diagram
 ![Screenshot (9)](https://user-images.githubusercontent.com/60625627/141907346-1fa2aef5-9921-4990-b61b-513bba0b59cf.png)
 
 ### Description of diagram
