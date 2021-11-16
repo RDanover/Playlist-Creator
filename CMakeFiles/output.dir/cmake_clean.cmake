@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/output.dir/src/Playlist.cpp.o"
   "CMakeFiles/output.dir/src/main.cpp.o"
   "output"
   "output.pdb"
