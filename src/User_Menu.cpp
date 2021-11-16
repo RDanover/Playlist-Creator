@@ -37,7 +37,7 @@ void User_Menu::access_playlist(){
 		display_options();
 	}
 	else{
-		playlists.at(input-1)->display_options();
+		user_playables.at(input-1)->display_options();
 	}
 
 }
