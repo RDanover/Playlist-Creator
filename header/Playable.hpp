@@ -7,7 +7,8 @@ using namespace std;
 
 class Playable {
     public:
-       virtural string get_name()=0;
-       virtural double get_length()=0;
+       virtual string get_name()=0;
+       virtual double get_length()=0;
+       virtual void display_options(){}
 };
 #endif //PLAYABLE_HPP
