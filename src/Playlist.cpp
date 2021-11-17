@@ -21,8 +21,6 @@ void Playlist::delete_song(){
 
 void Playlist::hide_unhide_song(){
 	string songname = "";
-	string response = "";
-	int responseInt = 0;
 	int indexOfSong = -1;
 	cout<<"Please enter the name of the song you would like to hide or unhide, or enter LEAVE, to return to the main menu."<<endl;
 	cin.ignore();
