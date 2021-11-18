@@ -6,14 +6,9 @@ ADD_SUBDIRECTORY(googletest)
 
 ADD_EXECUTABLE(output
     src/main.cpp
+    src/User_Menu.cpp
     src/Playlist.cpp
     src/Song.cpp
 )
 
-ADD_EXECUTABLE(test
-   tests/test.cpp
-)
-
-TARGET_LINK_LIBRARIES(test gtest)
-TARGET_COMPILE_DEFINITIONS(test PRIVATE gtest_disable_pthreads=ON)
 

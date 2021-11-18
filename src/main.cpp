@@ -1,14 +1,12 @@
 #include <iostream>
 #include "../header/User_Menu.hpp"
-#include "../header/Playlist.hpp"
+
 using namespace std;
 
 int main()
 {
-	Playlist test("Name");
-
-	test.hide_unhide_song();
-
+  /* Playlist* Play = new Playlist("My Playlist");
+   Play->display();*/ //test for display 
 	return 0;
 }
 
