@@ -8,5 +8,5 @@ class Public_Factory: public Abs_Factory{
 	virtual void create_playlist(){}
 	virtual void create_song(){}
 
-}
+};
 #endif
