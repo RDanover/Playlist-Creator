@@ -1,7 +1,6 @@
 #include "../header/User_Menu.hpp"
 #include <iostream>
 void User_Menu::display_options(){
-	return;
 }
 
 void User_Menu::create_new_playlist(){
