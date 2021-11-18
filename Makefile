@@ -68,10 +68,10 @@ RM = /usr/bin/cmake3 -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/csmajs/skang121/final-project-mgolw001-rdano001-skang121-vgondi002
+CMAKE_SOURCE_DIR = /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/csmajs/skang121/final-project-mgolw001-rdano001-skang121-vgondi002
+CMAKE_BINARY_DIR = /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -146,9 +146,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/skang121/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles /home/csmajs/skang121/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/skang121/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -175,19 +175,6 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
-
-#=============================================================================
-# Target rules for targets named test
-
-# Build rule for target.
-test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test
-.PHONY : test
-
-# fast build rule for target.
-test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
-.PHONY : test/fast
 
 #=============================================================================
 # Target rules for targets named output
@@ -254,6 +241,33 @@ gtest/fast:
 	$(MAKE) $(MAKESILENT) -f googletest/googletest/CMakeFiles/gtest.dir/build.make googletest/googletest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
+src/Playlist.o: src/Playlist.cpp.o
+
+.PHONY : src/Playlist.o
+
+# target to build an object file
+src/Playlist.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/src/Playlist.cpp.o
+.PHONY : src/Playlist.cpp.o
+
+src/Playlist.i: src/Playlist.cpp.i
+
+.PHONY : src/Playlist.i
+
+# target to preprocess a source file
+src/Playlist.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/src/Playlist.cpp.i
+.PHONY : src/Playlist.cpp.i
+
+src/Playlist.s: src/Playlist.cpp.s
+
+.PHONY : src/Playlist.s
+
+# target to generate assembly for a file
+src/Playlist.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/src/Playlist.cpp.s
+.PHONY : src/Playlist.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -281,33 +295,6 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-tests/test.o: tests/test.cpp.o
-
-.PHONY : tests/test.o
-
-# target to build an object file
-tests/test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/test.cpp.o
-.PHONY : tests/test.cpp.o
-
-tests/test.i: tests/test.cpp.i
-
-.PHONY : tests/test.i
-
-# target to preprocess a source file
-tests/test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/test.cpp.i
-.PHONY : tests/test.cpp.i
-
-tests/test.s: tests/test.cpp.s
-
-.PHONY : tests/test.s
-
-# target to generate assembly for a file
-tests/test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/test.cpp.s
-.PHONY : tests/test.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -325,13 +312,12 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... output"
-	@echo "... test"
+	@echo "... src/Playlist.o"
+	@echo "... src/Playlist.i"
+	@echo "... src/Playlist.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... tests/test.o"
-	@echo "... tests/test.i"
-	@echo "... tests/test.s"
 .PHONY : help
 
 
