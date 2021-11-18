@@ -6,7 +6,7 @@
 
 using namespace std;
 
-class Song {
+class Song: public Playable {
     private:
 	string name;
 	string artist;

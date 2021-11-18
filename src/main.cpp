@@ -5,11 +5,8 @@ using namespace std;
 
 int main()
 {
-
-	cout<<"Welcome user"<<endl;
-	User_Menu test;
-	test.access_playlist();
- 	cout<<"Goodbye user"<<endl;		
+  /* Playlist* Play = new Playlist("My Playlist");
+   Play->display();*/ //test for display 
 	return 0;
 }
 

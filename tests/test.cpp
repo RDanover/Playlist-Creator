@@ -1,7 +1,10 @@
 #include "gtest/gtest.h"
+#incldue "Playlist.hpp"
 
-TEST( TEST_NAME , TEST_DESCRIPTION ) {
-	//insert test       
+TEST(Playlist, PlaylistDisplay) {
+    Playlist* Playlist = new Playlist("My Playlist");
+    
+    EXPECT_EQ(       
 }
 
  
