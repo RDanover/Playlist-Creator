@@ -16,7 +16,7 @@ class Song: public Playable {
     public:
 	Song(string,string,double);
         string get_name(){return name;}
-	string get_artist(){return artist;
+	string get_artist(){return artist;}
 	double get_length(){return length;}
 	bool get_hidden_status(){return hidden;}
 	int get_num_time_played(){return num_time_played;}
