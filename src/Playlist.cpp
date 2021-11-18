@@ -1,6 +1,7 @@
 #include "../header/Playlist.hpp"
 #include <iostream>
 
+using namespace std;
 Playlist::Playlist(string n){
 	name = n;
 	length = 0;

@@ -13,6 +13,11 @@ class User_Menu {
     private:
 	vector<Playable*> user_playables;	        
     public:
+	User_Menu(){
+		user_playables.push_back(new Playlist("SICK SONGS"));
+		user_playables.push_back(new Playlist("Sad Songs"));
+		user_playables.push_back(new Playlist("Happy Songs"));
+	}
 	void display_options();
 	void create_new_playlist();
 	void delete_playlist();

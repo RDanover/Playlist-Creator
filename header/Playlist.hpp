@@ -15,11 +15,10 @@ class Playlist: public Playable{
 	double length;  
     public:
         Playlist(string);
-	
         string get_name(){return name;}
 	double get_length(){return length;}
 	void display();
-	
+
 	void add_song();
 	void delete_song();
 	void hide_unhide_song();
