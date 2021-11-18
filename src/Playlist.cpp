@@ -23,21 +23,19 @@ void Playlist::delete_song(){
 }
 
 void Playlist::hide_unhide_song(){
+	
 	string songname = "";
 	int indexOfSong = -1;
 	cout<<"Please enter the name of the song you would like to hide or unhide, or enter LEAVE, to return to the main menu."<<endl;
-	cin.ignore();
 	getline(cin,songname);
 	cout<<endl;
-	
-	if(songname.compare("LEAVE")){
+	if(songname.compare("LEAVE")==0){
 		display_options();
 		return;
 	}
 	else{
-
 		for(unsigned i=0;i<songs.size();i++){
-			if(songs.at(i)->get_name().compare(songname)){
+			if(songs.at(i)->get_name().compare(songname)==0){
 				indexOfSong = i;	
 			}
 		}
