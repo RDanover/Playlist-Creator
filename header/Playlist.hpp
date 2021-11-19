@@ -19,13 +19,15 @@ class Playlist: public Playable{
 	double get_length(){return length;}
 	void display();
 
-	void add_song();
+	void add_song(string name, string artist, double length);
 	void delete_song();
 	void hide_unhide_song();
 	void play();
 	void play_song();
 	void shuffle();
 	void analytics();
+        void display_songs();
+        bool song_exists(Song* curr); 
 };
 
 #endif // PLAYLIST_HPP
