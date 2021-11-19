@@ -1,4 +1,4 @@
-#include "Playlist.hpp"
+#include "../header/Playlist.hpp"
 #include <stdlib.h>
 #include <time.h>
 #include <iterator>
@@ -34,7 +34,7 @@ void Playlist::play_song(){
 
 void Playlist::shuffle(){
 	if(songs.size()<1){
-		cout<<"please add songs before trying to shuffle the plaaylist"<<endl;
+		cout<<"Please add songs before trying to shuffle the plaaylist"<<endl;
 		return;
 	}
 	
@@ -57,8 +57,13 @@ void Playlist::shuffle(){
 		temp.erase(ptr);
 	}	
 
-	cout<<"songs have been shuffled"<<endl;	
-
+	cout<<"Songs have been shuffled, now playing playlist"<<endl;	
+	for(int i=0; i<shuffled_songs.size();i++){
+		if(!shuffled_songs.at(i)->get_hidden_status){
+			cout<<"Playing: "<< shuffled_songs.at(i)->get_name()<<" by: "<< shuffled_songs.at(i)->get_artist()<<" for  " <<shuffled_songs.at(i)->get_length()<<" minutes."<<endl;
+		}
+	}
+	return;
 }
 
 void Playlist::analytics(){
