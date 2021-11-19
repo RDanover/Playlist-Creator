@@ -18,7 +18,6 @@ class Playlist: public Playable{
         string get_name(){return name;}
 	double get_length(){return length;}
 	void display();
-
 	void add_song(string name, string artist, double length);
 	void delete_song();
 	void hide_unhide_song();
