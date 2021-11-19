@@ -9,8 +9,8 @@ using namespace std;
 
 class Playlist: public Playable{
     private:
-	vector<Song*> songs;
-	vector<Song*> shuffled_songs;      
+	vector<Playable*> songs;
+	vector<Playable*> shuffled_songs;      
 	string name;
 	double length;  
     public:
