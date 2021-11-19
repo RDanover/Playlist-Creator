@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
   /* Playlist* Play = new Playlist("My Playlist");
-   Play->display();*/ //test for display 
+   Play->display();*/ //test for playlist interface 
 	return 0;
 }
 

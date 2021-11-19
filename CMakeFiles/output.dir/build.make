@@ -90,9 +90,22 @@ CMakeFiles/output.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/output.dir/src/main.cpp.s"
 	/opt/rh/devtoolset-6/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/main.cpp -o CMakeFiles/output.dir/src/main.cpp.s
 
+CMakeFiles/output.dir/src/User_Menu.cpp.o: CMakeFiles/output.dir/flags.make
+CMakeFiles/output.dir/src/User_Menu.cpp.o: src/User_Menu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/output.dir/src/User_Menu.cpp.o"
+	/opt/rh/devtoolset-6/root/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/output.dir/src/User_Menu.cpp.o -c /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/User_Menu.cpp
+
+CMakeFiles/output.dir/src/User_Menu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/output.dir/src/User_Menu.cpp.i"
+	/opt/rh/devtoolset-6/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/User_Menu.cpp > CMakeFiles/output.dir/src/User_Menu.cpp.i
+
+CMakeFiles/output.dir/src/User_Menu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/output.dir/src/User_Menu.cpp.s"
+	/opt/rh/devtoolset-6/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/User_Menu.cpp -o CMakeFiles/output.dir/src/User_Menu.cpp.s
+
 CMakeFiles/output.dir/src/Playlist.cpp.o: CMakeFiles/output.dir/flags.make
 CMakeFiles/output.dir/src/Playlist.cpp.o: src/Playlist.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/output.dir/src/Playlist.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/output.dir/src/Playlist.cpp.o"
 	/opt/rh/devtoolset-6/root/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/output.dir/src/Playlist.cpp.o -c /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/Playlist.cpp
 
 CMakeFiles/output.dir/src/Playlist.cpp.i: cmake_force
@@ -103,19 +116,36 @@ CMakeFiles/output.dir/src/Playlist.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/output.dir/src/Playlist.cpp.s"
 	/opt/rh/devtoolset-6/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/Playlist.cpp -o CMakeFiles/output.dir/src/Playlist.cpp.s
 
+CMakeFiles/output.dir/src/Song.cpp.o: CMakeFiles/output.dir/flags.make
+CMakeFiles/output.dir/src/Song.cpp.o: src/Song.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/output.dir/src/Song.cpp.o"
+	/opt/rh/devtoolset-6/root/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/output.dir/src/Song.cpp.o -c /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/Song.cpp
+
+CMakeFiles/output.dir/src/Song.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/output.dir/src/Song.cpp.i"
+	/opt/rh/devtoolset-6/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/Song.cpp > CMakeFiles/output.dir/src/Song.cpp.i
+
+CMakeFiles/output.dir/src/Song.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/output.dir/src/Song.cpp.s"
+	/opt/rh/devtoolset-6/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/Song.cpp -o CMakeFiles/output.dir/src/Song.cpp.s
+
 # Object files for target output
 output_OBJECTS = \
 "CMakeFiles/output.dir/src/main.cpp.o" \
-"CMakeFiles/output.dir/src/Playlist.cpp.o"
+"CMakeFiles/output.dir/src/User_Menu.cpp.o" \
+"CMakeFiles/output.dir/src/Playlist.cpp.o" \
+"CMakeFiles/output.dir/src/Song.cpp.o"
 
 # External object files for target output
 output_EXTERNAL_OBJECTS =
 
 output: CMakeFiles/output.dir/src/main.cpp.o
+output: CMakeFiles/output.dir/src/User_Menu.cpp.o
 output: CMakeFiles/output.dir/src/Playlist.cpp.o
+output: CMakeFiles/output.dir/src/Song.cpp.o
 output: CMakeFiles/output.dir/build.make
 output: CMakeFiles/output.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable output"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable output"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/output.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -1,4 +1,5 @@
 #include "../header/Playlist.hpp"
+#include "../header/Song.hpp"
 #include <iostream>
 
 using namespace std;
@@ -11,10 +12,9 @@ void Playlist::display() {
    std::string option = "B";
    while(option != "E") {
        std::cout << name << std::endl;
-       std::cout << std::endl;
-       // display_songs();
+       display_songs();
 
-       std::cout << "(A) - ADD SONG" << std::endl;
+       std::cout << "(AS) - ADD SONG" << std::endl;
        // std::cout << std::endl;
        std::cout << "(D) - DELETE SONG" << std::endl;
        // std::cout << std::endl;
@@ -29,14 +29,43 @@ void Playlist::display() {
        std::cout << "(A) - ANALYTICS" << std::endl;
        // std::cout << endl;
        std::cout << "(E) - EXIT" << std::endl;
+       cout << endl;
        std::cout << "ENTER OPTION:" << endl;
 
        std::cin >> option;
        
        if (option == "AS") {
+       std::string name;
+       std::string artist;
+       double length;
+       Song* temp = nullptr;
+       char duplicate;
+       std::cout << endl;
+       std::cin.ignore();
+       cout << "Enter song name:" << endl;
+       std::getline(std::cin, name);
        cout << endl;
-       //add_song();
+       cout << "Enter artist name:" << endl;
+       std::getline(std::cin, artist);
+       cout << endl;
+       cout << "Enter song length:" << endl;
+       cin >> length;
+       cout << endl;
+       temp = new Song(name, artist, length);
+       if (song_exists(temp)) {
+          cout << "Add song again? - Song already exists in playlist" << endl;
+          cout << "Enter (y/n):" << endl;
+          cin >> duplicate;
+          cout << endl;
+          if (duplicate == 'y') {
+             add_song(name, artist, length);
+             delete temp;
+          }
        }
+       else {
+           add_song(name, artist, length);
+       }
+ }
     
        else if (option == "DS") {
        cout << endl;
@@ -68,9 +97,26 @@ void Playlist::display() {
    }       
              
 }
+
+bool Playlist::song_exists(Song* curr) {
+     for (unsigned int i = 0; i < songs.size(); i++) {
+         if (songs.at(i)->get_artist() == curr->get_artist() && songs.at(i)->get_name() == curr->get_name() && songs.at(i)->get_length() == curr->get_length()) {
+             return true;
+         }
+     }
+     return false;
+}
+
+void Playlist::display_songs() {
+     for (unsigned int i = 0; i < songs.size(); i++) {
+        std::cout << songs.at(i)->get_name() << " - " << songs.at(i)->get_artist() << endl;
+     }   
+     cout << endl;
+} 
        
-void Playlist::add_song(){
-	//insert implementation
+void Playlist::add_song(string name, string artist, double length){
+	Song* temp = new Song(name, artist, length);
+        songs.push_back(temp);
 }
 
 void Playlist::delete_song(){
