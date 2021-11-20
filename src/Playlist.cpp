@@ -199,6 +199,7 @@ void Playlist::shuffle(){
 	for(int i=0; i<shuffled_songs.size();i++){
 		if(!shuffled_songs.at(i)->get_hidden_status){
 			cout<<"Playing: "<< shuffled_songs.at(i)->get_name()<<" by: "<< shuffled_songs.at(i)->get_artist()<<" for  " <<shuffled_songs.at(i)->get_length()<<" minutes."<<endl;
+			shuffled_songs.at(i)->increment_time_played();//will need to be removed for the private playlist
 		}
 	}
 	return;
