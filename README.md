@@ -21,7 +21,7 @@ Users can also choose to play, skip, and shuffle songs. In addition, they will b
 ## Phase II
 
 ###Class Diagram
-![Screenshot (9)](https://user-images.githubusercontent.com/60625627/141907346-1fa2aef5-9921-4990-b61b-513bba0b59cf.png)
+![Screenshot (10)](https://user-images.githubusercontent.com/60625627/142710944-fa7bd646-d6a3-47c5-81bd-b917f0aba7f5.png)
 
 ### Description of diagram
 Our project will feature two interfaces, one where the user can see their playlists and choose to delete them or add more, this is also where users will access their playlists. This interface will hold a vector of playable pointers making it a composition of the playable class, a playlist can have one user but a user can have 0 to any positive integer number of playlists. Our second interface will be the playlist interface which will allow users to play the songs in their playlist, delete songs, hide them, or add new ones, they will also be able to view analytics about their listening habits if they choose to have their data collected. This interface will feature two vectors composed of song object pointers making the playlist class a composition of the song class. The song class is simply a leaf class and will not be directly accessed by the user. A playlist can have 0 to many songs, however (with our implementation) a song will only belong to one playlist. 
