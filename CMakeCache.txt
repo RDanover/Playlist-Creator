@@ -374,4 +374,33 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 CMAKE_USE_RELATIVE_PATHS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+<<<<<<< HEAD
 
+=======
+//Details about finding Python
+FIND_PACKAGE_MESSAGE_DETAILS_Python:INTERNAL=[/usr/bin/python3.6][cfound components: Interpreter ][v3.6.8()]
+//Details about finding Threads
+FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+//CMAKE_INSTALL_PREFIX during last run
+_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
+//Path to a program.
+_Python_EXECUTABLE:INTERNAL=/usr/bin/python3.6
+//Python Properties
+_Python_INTERPRETER_PROPERTIES:INTERNAL=Python;3;6;8;64;m;cpython-36m-x86_64-linux-gnu;/usr/lib64/python3.6;/usr/lib64/python3.6;/usr/lib/python3.6/site-packages;/usr/lib64/python3.6/site-packages
+_Python_INTERPRETER_SIGNATURE:INTERNAL=d56fdd14317999eabbcae3dea187bdf7
+cmake_package_name:INTERNAL=GTest
+generated_dir:INTERNAL=/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/googletest/googletest/generated
+//ADVANCED property for variable: gmock_build_tests
+gmock_build_tests-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: gtest_build_samples
+gtest_build_samples-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: gtest_build_tests
+gtest_build_tests-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: gtest_disable_pthreads
+gtest_disable_pthreads-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: gtest_force_shared_crt
+gtest_force_shared_crt-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: gtest_hide_internal_symbols
+gtest_hide_internal_symbols-ADVANCED:INTERNAL=1
+targets_export_name:INTERNAL=GTestTargets
+>>>>>>> d606577ca211eaaf96822b9dab83f9c6daa3bf85
