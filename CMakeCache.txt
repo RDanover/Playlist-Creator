@@ -547,4 +547,3 @@ gtest_force_shared_crt-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: gtest_hide_internal_symbols
 gtest_hide_internal_symbols-ADVANCED:INTERNAL=1
 targets_export_name:INTERNAL=GTestTargets
-
