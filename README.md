@@ -20,29 +20,18 @@ Users can also choose to play, skip, and shuffle songs. In addition, they will b
 
 ## Phase II
 
-Class Diagram
-![image](https://user-images.githubusercontent.com/60625627/139507582-d1bb9dbb-16e3-4521-b130-7c872cf56820.png)
+###Class Diagram
+![Screenshot (10)](https://user-images.githubusercontent.com/60625627/142710944-fa7bd646-d6a3-47c5-81bd-b917f0aba7f5.png)
 
 ### Description of diagram
-Our project will feature two interfaces, one where the user can see their playlists and choose to delete them or add more, this is also where users will access their playlists. This interface will hold a vector of playlist pointers making it a composition of the playlist class, a playlist can have one user but a user can have 0 to any positive integer number of playlists. Our second interface will be the playlist interface which will allow users to play the songs in their playlist, delete songs, hide them, or add new ones, they will also be able to view analytics about their listening habits. This interface will feature two vectors composed of song object pointers making the playlist class a composition of the song class. The song class is simply a leaf class and will not be directly accessed by the user. A playlist can have 0 to many songs, however (with our implementation) a song will only belong to one playlist.
+Our project will feature two interfaces, one where the user can see their playlists and choose to delete them or add more, this is also where users will access their playlists. This interface will hold a vector of playable pointers making it a composition of the playable class, a playlist can have one user but a user can have 0 to any positive integer number of playlists. Our second interface will be the playlist interface which will allow users to play the songs in their playlist, delete songs, hide them, or add new ones, they will also be able to view analytics about their listening habits if they choose to have their data collected. This interface will feature two vectors composed of song object pointers making the playlist class a composition of the song class. The song class is simply a leaf class and will not be directly accessed by the user. A playlist can have 0 to many songs, however (with our implementation) a song will only belong to one playlist. 
  
- > ## Phase III
- > You will need to schedule a check-in with the TA (during lab hours or office hours). Your entire team must be present. 
- > * Before the meeting you should perform a sprint plan like you did in Phase II.
- > * You should also update this README file by adding the following:
- >   * What design patterns did you use? For each design pattern you must explain in 4-5 sentences:
- >     * Why did you pick this pattern? And what feature did you implement with it?
- >     * How did the design pattern help you write better code?
- >   * An updated class diagram that reflects the design patterns you used. You may combine multiple design patterns into one diagram if you'd like, but it needs to be clear which portion of the diagram represents which design pattern (either in the diagram or in the description).
- >   * Make sure your README file (and Project board) are up-to-date reflecting the current status of your project. Previous versions of the README file should still be visible through your commit history.
-> 
-> During the meeting with your TA you will discuss: 
- > * How effective your last sprint was (each member should talk about what they did)
- > * Any tasks that did not get completed last sprint, and how you took them into consideration for this sprint
- > * Any bugs you've identified and created issues for during the sprint. Do you plan on fixing them in the next sprint or are they lower priority?
- > * What tasks you are planning for this next sprint.
+ ## Phase III
+ ### Composite Pattern:
+ We chose this pattern as it seemed to best to use with the structure of our project. A playlist is traditionally made up of many songs which is a composition. By using    this design pattern we can have more structural code. It also makes it easier for users to interact with playlists and songs as they are treated the same under the composite pattern. We used composition in both the User_Menu class and in the playlist class to help with organization. 
+### Abstract Factory:
+ We chose this pattern to solve the ethical issue of collecting data without user consent. We will prompt the user if they would like their data to be collected for use in     displaying their anaylitics. If the user opts out, their data will not be collected and an alternative implementation of playlist and song will be used. By using this     pattern it simplifies and organizes the design by splitting the creation of certain functions based on the user's decision. 
 
- 
  > ## Final deliverable
  > All group members will give a demo to the TA during lab time. The TA will check the demo and the project GitHub repository and ask a few questions to all the team members. 
  > Before the demo, you should do the following:

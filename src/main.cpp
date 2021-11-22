@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
+#include "../header/User_Menu.hpp"
 using namespace std;
-#inlcude "../header/User_Menu.hpp"
 
 int main()
 {
@@ -28,13 +28,11 @@ int main()
 // 			cout<<"INVALID INPUT. Please try again."<<endl;
 // 		}
 // 	}
-
 // 	if(input.compare("NO"){
 // 		//implement private factory
 // 	}
 // 	else{
 // 		//implement public factory
 // 	}
-
 	return 0;	
 }
