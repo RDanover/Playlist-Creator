@@ -8,8 +8,34 @@ void User_Menu::create_new_playlist(){
 }
 
 void User_Menu::delete_playlist(){
-	//insert implemenation
+for(unsigned int i = 0 ; i < user_playables.size(); i++ ){
+		cout << i+1 << ". " << user_playables.at(i)->get_name() << endl;
+    }
+    
+    int input = 0;
+    cout << "Please type the number next to the playlist you would like to delete, or to return to options press 0 and enter" << endl;
+    cin >> input;
+    cin.ignore();
+    
+    if( input < 0 || input > user_playables.size()){
+		cout << "Invalid input please try again"<<endl;
+		delete_playlist();
+	}
+	
+	else if( input == 0) {
+		display_options();
+	}
+	
+	else{
+		string n = user_playables.at(input-1)->get_name();
+		for(unsigned int i = 0; i < user_playables.at(input-1)->get_length(); i++){
+			delete user_playables.at(input-1).at(i);
+			}
+			delete user_playables.at(input-1);
+		cout << n << " was deleted" << endl; 
+	}
 }
+
 
 //Function Name: access_playlist()
 //purpose: This function will display all of the users playlists to the user and prompt them for which one they would like to access
@@ -18,7 +44,7 @@ void User_Menu::delete_playlist(){
 void User_Menu::access_playlist(){
 
 	//list playlists starting with a number to index them
-	for( unsigned i = 0 ; i < user_playables.size(); i++ ){
+	for( unsigned int i = 0 ; i < user_playables.size(); i++ ){
 		cout << i+1 << ". " << user_playables.at(i)->get_name() << endl;
         }
 
