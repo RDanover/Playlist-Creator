@@ -41,6 +41,11 @@ void User_Menu::access_playlist(){
 
 }
 
+void User_Menu::add_playlist(Playable *playlist)
+{
+	user_playables.push_back(playlist);
+}
+
 void User_Menu::exit(){
 	//insert implementation
 }
