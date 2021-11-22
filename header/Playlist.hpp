@@ -22,7 +22,7 @@ class Playlist: public Playable{
 	      void delete_song();
 	      void hide_unhide_song();
 	      void play();
-	      void play_song();
+	      void play_song(string song, string artist);
 	      void shuffle();
 	      void analytics();
         void display_songs();
