@@ -182,6 +182,7 @@ void Playlist::play_song(string song, string artist){
            if (songs.at(i)->get_name() == song && songs.at(i)->get_artist() == artist) {
                found = true;
                cout << songs.at(i)->get_name() << " - " << songs.at(i)->get_artist() << " is now playing." << endl;
+               songs.at(i)->increment_time_played();
            }
        }
        if (!found) {
