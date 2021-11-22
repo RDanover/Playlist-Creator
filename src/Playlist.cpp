@@ -5,7 +5,7 @@
 #include "../header/Song.hpp"
 #include <iostream>
 
-using namespace std;
+
 Playlist::Playlist(string n){
    name = n;
 }
@@ -175,19 +175,22 @@ void Playlist::hide_unhide_song(){
 void Playlist::play(){
 	
 	if (songs.size() == 0){
-		cout << "Please add songs to play" << endl;
-		display();
-		return;
+  std::cout << "Please add songs to play" << endl;
+  display();
+	return;
 	}
 
 	if(songs.size() > 0){
-		cout << "Now playing: " << songs.at(0)->get_name() << ", by " << songs.at(0)->get_artist() << endl;
+  std::cout << "Now playing: " << songs.at(0)->get_name() << ", by " << songs.at(0)->get_artist() << endl;
+  songs.at(0)->increment_time_played();
 	}
 	
-	if(songs.size() > 1){
-		cout << "Upcoming songs: " << endl; 
-		for( unsigned i = 1; i < songs.size(); i++){
-			cout << songs.at(i)->get_name() << ", by " << songs.at(i)->get_artist() << endl;
+	 if(songs.size() > 1){
+	  std::cout << "Upcoming songs: " << endl; 
+		for( unsigned int i = 1; i < songs.size(); i++){
+			std::cout << songs.at(i)->get_name() << ", by " << songs.at(i)->get_artist() << endl;
+			songs.at(i)->increment_time_played();
+
 		}
 	}
 
