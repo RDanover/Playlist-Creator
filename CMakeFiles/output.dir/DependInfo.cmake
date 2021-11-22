@@ -5,6 +5,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/Playlist.cpp" "/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles/output.dir/src/Playlist.cpp.o"
+  "/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/Song.cpp" "/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles/output.dir/src/Song.cpp.o"
+  "/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/User_Menu.cpp" "/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles/output.dir/src/User_Menu.cpp.o"
   "/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/main.cpp" "/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles/output.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

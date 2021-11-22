@@ -24,7 +24,7 @@ void User_Menu::access_playlist(){
 
 	//ask for user input
 	int input = 0;
-	cout << "Please type the number next to the playlist you would like to acess and hit enter, or to return to options press 0 and hit enter" << endl;
+	cout << "Please type the number next to the playlist you would like to access and hit enter, or to return to options press 0 and hit enter" << endl;
 	cin >> input;	
 	cin.ignore();//clears the newline left in th stream incase getline is used after this
 	//check input then send user to the correct playlist
@@ -36,7 +36,7 @@ void User_Menu::access_playlist(){
 		display_options();
 	}
 	else{
-		user_playables.at(input-1)->display_options();
+		user_playables.at(input-1)->display();
 	}
 
 }

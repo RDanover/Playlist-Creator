@@ -6,8 +6,19 @@ CMakeFiles/output.dir/src/Playlist.cpp.o: header/Playlist.hpp
 CMakeFiles/output.dir/src/Playlist.cpp.o: header/Song.hpp
 CMakeFiles/output.dir/src/Playlist.cpp.o: src/Playlist.cpp
 
+CMakeFiles/output.dir/src/Song.cpp.o: header/Playable.hpp
+CMakeFiles/output.dir/src/Song.cpp.o: header/Song.hpp
+CMakeFiles/output.dir/src/Song.cpp.o: src/Song.cpp
+
+CMakeFiles/output.dir/src/User_Menu.cpp.o: header/Playable.hpp
+CMakeFiles/output.dir/src/User_Menu.cpp.o: header/Playlist.hpp
+CMakeFiles/output.dir/src/User_Menu.cpp.o: header/Song.hpp
+CMakeFiles/output.dir/src/User_Menu.cpp.o: header/User_Menu.hpp
+CMakeFiles/output.dir/src/User_Menu.cpp.o: src/User_Menu.cpp
+
 CMakeFiles/output.dir/src/main.cpp.o: header/Playable.hpp
 CMakeFiles/output.dir/src/main.cpp.o: header/Playlist.hpp
 CMakeFiles/output.dir/src/main.cpp.o: header/Song.hpp
+CMakeFiles/output.dir/src/main.cpp.o: header/User_Menu.hpp
 CMakeFiles/output.dir/src/main.cpp.o: src/main.cpp
 
