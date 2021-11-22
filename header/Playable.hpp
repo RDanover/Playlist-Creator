@@ -17,9 +17,9 @@ class Playable {
        virtual void play_song(){}
        virtual void shuffle(){}
        virtual void analytics(){}
-       virtual void display_songs{}
+       virtual void display_songs(){}
        
-       virtual void get_artist(){}
+       virtual string get_artist(){}
        virtual bool get_hidden_status(){}
        virtual int get_num_time_played(){}
        virtual void set_hidden_status(){}

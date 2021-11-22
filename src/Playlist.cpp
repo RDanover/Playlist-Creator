@@ -84,8 +84,18 @@ void Playlist::display() {
        //play();
        }
        else if(option == "PS") {
+       string song;
+       string artist;
        cout << endl;
-       //play_song();
+       cin.ignore();
+       cout << "Enter song name:" << endl;
+       getline(cin, song);
+       cout << endl;
+       cout << "Enter artist name:" << endl;
+       getline(cin, artist);
+       cout << endl;
+       play_song(song, artist);
+       cout << endl;
        }
        else if(option == "S") {
        cout << endl;
@@ -133,7 +143,7 @@ void Playlist::hide_unhide_song(){
 	getline(cin,songname);
 	cout<<endl;
 	if(songname.compare("LEAVE")==0){
-		display_options();
+		display();
 		return;
 	}
 	else{
@@ -166,22 +176,32 @@ void Playlist::play(){
 	//insert implementation
 }
 
-void Playlist::play_song(){
-	//insert implementation
+void Playlist::play_song(string song, string artist){
+     bool found = false;
+     for (unsigned int i = 0; i < songs.size(); i++) {
+           if (songs.at(i)->get_name() == song && songs.at(i)->get_artist() == artist) {
+               found = true;
+               cout << songs.at(i)->get_name() << " - " << songs.at(i)->get_artist() << " is now playing." << endl;
+           }
+       }
+       if (!found) {
+          cout <<  "Song is not found in current playlist." << endl;
+       }
+	
 }
 
 void Playlist::shuffle(){
 	if(songs.size()<1){
-		cout<<"Please add songs before trying to shuffle the plaaylist"<<endl;
+		cout<<"Please add songs before trying to shuffle the playlist"<<endl;
 		return;
 	}
 	
 	shuffled_songs = songs;
 	
-	vector <Song*> temp;
+	vector <Playable*> temp;
 	temp = songs;
 	
-	vector<Song*>::iterator ptr;
+	vector<Playable*>::iterator ptr;
 	
 	srand(time(NULL));//setting the seed based on the current time
 	
@@ -197,7 +217,7 @@ void Playlist::shuffle(){
 
 	cout<<"Songs have been shuffled, now playing playlist"<<endl;	
 	for(int i=0; i<shuffled_songs.size();i++){
-		if(!shuffled_songs.at(i)->get_hidden_status){
+		if(!shuffled_songs.at(i)->get_hidden_status()){
 			cout<<"Playing: "<< shuffled_songs.at(i)->get_name()<<" by: "<< shuffled_songs.at(i)->get_artist()<<" for  " <<shuffled_songs.at(i)->get_length()<<" minutes."<<endl;
 			shuffled_songs.at(i)->increment_time_played();//will need to be removed for the private playlist
 		}
@@ -207,5 +227,5 @@ void Playlist::shuffle(){
 
 void Playlist::analytics(){
 	//insert implementation
-}shuffled_songs = temp;
+}//shuffled_songs = temp;
 
