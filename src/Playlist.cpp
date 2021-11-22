@@ -181,8 +181,9 @@ void Playlist::play_song(string song, string artist){
      for (unsigned int i = 0; i < songs.size(); i++) {
            if (songs.at(i)->get_name() == song && songs.at(i)->get_artist() == artist) {
                found = true;
-               cout << songs.at(i)->get_name() << " - " << songs.at(i)->get_artist() << " is now playing." << endl;
                songs.at(i)->increment_time_played();
+               cout << songs.at(i)->get_name() << " - " << songs.at(i)->get_artist() << " is now playing." << endl;
+     
            }
        }
        if (!found) {
