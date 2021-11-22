@@ -96,7 +96,7 @@ void Playlist::play(){
 	if(songs.size() > 1){
 		cout << "Upcoming songs: " << endl; 
 		for( unsigned i = 1; i < songs.size(); i++){
-			cout << songs.at(i)->get_name() << ", by " << songs.at(i)->get_artist << endl;
+			cout << songs.at(i)->get_name() << ", by " << songs.at(i)->get_artist() << endl;
 		}
 	}
 
@@ -112,5 +112,41 @@ void Playlist::shuffle(){
 }
 
 void Playlist::analytics(){
-	//insert implementation
+		vector<int> v;
+	int max = songs.at(0)->get_num_time_played();
+	
+	for(unsigned int i = 0; i < songs.size(); i++){ // find max time played
+		if(songs.at(i)->get_num_time_played() > max)
+		max = songs.at(i)->get_num_time_played();	
+	}
+	
+	
+	for(unsigned int i = 0; i < songs.size(); i++){ //make a vector to store all the indexes of this max val
+		if (songs.at(i)->get_num_time_played() == max)
+		v.push_back(i);
+	}
+	
+	if(v.size() == 1){ // if only one instance of max val
+		std::cout << "Your most played song is " << songs.at(v.at(0))->get_name() << " by " << songs.at(v.at(0))->get_artist() << endl;
+	}
+	
+	else { //if few instances of highest val
+		std::cout << "Your most played songs are : " << endl;
+		for(unsigned int i = 0; i < v.size(); i++){
+			std::cout << songs.at(v.at(i))->get_name() << " by " << songs.at(v.at(i))->get_artist() << endl; 
+		}
+			
+	}
+		
+		
+	int sum = 0; 
+	for(unsigned int i = 0; i < songs.size(); i++){
+		sum += songs.at(i)->get_num_time_played() * songs.at(i)->get_length(); 
+	}
+	
+	if (sum%60 == 0)
+	std::cout << "You spent " << sum/60 << " minutes listening to this playlist." << endl;
+	
+	else
+	std::cout << "You spent " << sum/60 << " minutes and " << sum%60 << " seconds listening to this playlist." << endl;
 }
