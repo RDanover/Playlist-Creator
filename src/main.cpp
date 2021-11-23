@@ -59,10 +59,12 @@ int main()
   	playlist_2->add_song(new Song("Overpass Graffiti", "Ed Sheeran", 236));
   	playlist_2->add_song(new Song("My Universe", "Coldplay", 228));
   	playlist_2->add_song(new Song("Bad Habits", "Ed sheeran", 230));
-  	playlist_2->add_song(new Song("Ghost Town", "Benson Boone", 193));
+  	playlist_2->add_song(new Song("GhostTown", "Benson Boone", 193));
+	playlist_2->delete_song();
   	playlist_2->shuffle();
   	menu->add_playlist(playlist_2);
   	menu->access_playlist();
+	
   	cout << endl;
 
   	return 0;

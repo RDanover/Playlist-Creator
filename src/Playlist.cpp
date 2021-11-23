@@ -149,7 +149,44 @@ void Playlist::add_song(Playable *song)
 
 void Playlist::delete_song()
 {
-   // insert implementation
+   int input;
+   string title;
+   int order;
+   cout << "Enter 1 if you want to delete a song by titles" << endl;
+   cout << "Enter 2 if you want to delete a song by order" << endl;
+   cin >> input;
+   if(input == 1)
+   {
+	cout << "Enter title: ";
+	cin.ignore();
+        getline(cin, title);
+	for(int i = 0; i < songs.size(); i++) {
+	    if(songs.at(i)->get_name() == title) {
+		songs.erase(songs.begin()+i);
+		return;
+	    }
+	}
+	cout << "Can't find the song" << endl;
+   }
+   else if(input == 2)
+   {
+	cout << "Enter the order: ";
+	cin >> order;
+	if(order < 1 || order > songs.size()){
+	    cout << "Invalid order" << endl;
+	    return;
+	}
+	else {
+	    songs.erase(songs.begin()+order-1);
+	}
+   }
+   else 
+   {
+	cout << "Invalid input" << endl;
+	return;
+   }
+
+   
 }
 
 void Playlist::hide_unhide_song()
