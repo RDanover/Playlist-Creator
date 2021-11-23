@@ -5,15 +5,16 @@ using namespace std;
 
 int main()
 {
-	cout << "Welcome to our playlist program." << endl; 
-	cout << "In this program you will be able to make multiple playlists and add songs to each of them." <<endl;
+	cout << "Welcome to our playlist program. "; 
+	cout << "In this program you will be able to make multiple playlists and add songs to each of them. "; 
 	cout << "You will then be able to \"listen\" to these songs along with various other features."<<endl<<endl<<endl;
 
 	User_Menu* menu = new User_Menu();
-	menu->create_new_playlist();
+	//menu->create_new_playlist();
+	menu->display_options();
 	Playlist* playlist = new Playlist("PlayLists");
  	Playlist* playlist_2 = new Playlist("Playlists2");
-
+	
  	Playable* happy_birthday = new Song("Happy Birthday", "Anonymnous", 30);
  	Playable* so_sick = new Song("So Sick", "Neyo", 180);
  	Playable* the_star_spangled_banner = new Song("The Star Spangled Banner", "Francis Scott Key", 200);
@@ -39,7 +40,7 @@ int main()
 
   	// Add songs to the playlist.
   	cout << "===== Add songs to the playlist =====" << endl;
-  	menu->add_playlist(playlist);
+  	//menu->add_playlist(playlist);
   	menu->access_playlist();
   	cout << endl;
 
@@ -63,7 +64,7 @@ int main()
   	playlist_2->add_song(new Song("GhostTown", "Benson Boone", 193));
 	playlist_2->delete_song();
   	playlist_2->shuffle();
-  	menu->add_playlist(playlist_2);
+  	menu->add_playlist();
   	menu->access_playlist();
 	
   	cout << endl;

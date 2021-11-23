@@ -21,9 +21,9 @@ public:
 		user_playables.push_back(new Playlist("Sad Songs"));
 		user_playables.push_back(new Playlist("Happy Songs"));
 	}
-	void add_playlist(Playable *playable);
+	void add_playlist();
 	void display_options();
-	void create_new_playlist();
+	Playlist* create_new_playlist();
 	void delete_playlist();
 	void access_playlist();
 	void exit();
