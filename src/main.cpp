@@ -10,6 +10,7 @@ int main()
 	cout << "You will then be able to \"listen\" to these songs along with various other features."<<endl<<endl<<endl;
 
 	User_Menu* menu = new User_Menu();
+	menu->create_new_playlist();
 	Playlist* playlist = new Playlist("PlayLists");
  	Playlist* playlist_2 = new Playlist("Playlists2");
 

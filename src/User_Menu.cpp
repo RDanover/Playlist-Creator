@@ -5,6 +5,16 @@ void User_Menu::display_options(){
 
 void User_Menu::create_new_playlist(){
 	//insert implementation
+	string playlist_name;
+	cout << "Input the playlist name: ";
+        getline(cin, playlist_name);
+        for(int i = 0; i < user_playables.size(); i++) {
+            if(user_playables.at(i)->get_name() == playlist_name) {
+                cout << "the name already exists!" << endl;
+                return;
+            }
+        }
+	user_playables.push_back(new Playlist(playlist_name));
 }
 
 void User_Menu::delete_playlist(){
