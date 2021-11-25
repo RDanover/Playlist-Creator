@@ -121,8 +121,10 @@ void Playlist::display()
          cout << endl;
          analytics();
       }
-      else if (option != "E"){
+      else if (option != "E")
+      {
 	  cout << "Invalid input, try again." << endl;
+      }
    }
 }
 
