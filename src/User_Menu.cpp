@@ -29,6 +29,9 @@ void User_Menu::display_options(){
      else if(option == "E") {
 	return;
      }
+     else if (option != "E"){
+	  cout << "Invalid input, try again." << endl;
+     }	
 
    }
 }
