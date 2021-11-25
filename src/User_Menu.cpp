@@ -1,10 +1,52 @@
 #include "../header/User_Menu.hpp"
 #include <iostream>
 void User_Menu::display_options(){
+  std::string option = "B";
+  while (option != "E")
+  {
+     std::cout << endl << endl;
+     std::cout << "(AD) - ADD NEW PLAYLIST" << std::endl;
+     std::cout << std::endl;
+     std::cout << "(D) - DELETE A PLAYLIST" << std::endl;
+     std::cout << std::endl;
+     std::cout << "(AC) - ACCESS A PLAYLIST" << std::endl;
+     std::cout << std::endl;
+     std::cout << "(E) - EXIT" << std::endl;
+     std::cout << std::endl << std::endl;
+     std::cout << "ENTER OPTION:" << endl;
+     cin >> option;
+      
+     if(option == "AD") {
+	add_playlist();
+     }
+     else if(option == "D") {
+	delete_playlist();
+     }
+     else if(option == "AC") {
+	access_playlist();	
+     }
+     else if(option == "E") {
+	return;
+     }
+
+   }
 }
 
-void User_Menu::create_new_playlist(){
+Playlist* User_Menu::create_new_playlist(){
 	//insert implementation
+	string playlist_name;
+	cout << "Input the playlist name: ";
+        cin >> playlist_name;
+	
+	while(1){
+        	for(int i = 0; i < user_playables.size(); i++) {
+            		if(user_playables.at(i)->get_name() == playlist_name) {
+               	 		cout << "the name already exists!" << endl;
+            		}
+        	}
+		return new Playlist(playlist_name);
+	}
+	//user_playables.push_back(new Playlist(playlist_name));
 }
 
 void User_Menu::delete_playlist(){
@@ -41,6 +83,16 @@ void User_Menu::access_playlist(){
 
 }
 
+void User_Menu::add_playlist()
+{	
+	//string playlist_name;
+	//cout << "Input the playlist name: ";
+	//getline(cin, playlist_name);
+	Playlist* new_playlist = create_new_playlist();
+	user_playables.push_back(new_playlist);
+}
+
 void User_Menu::exit(){
 	//insert implementation
+	return;
 }
