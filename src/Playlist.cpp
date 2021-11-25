@@ -55,7 +55,7 @@ void Playlist::display()
          cout << "Enter artist name:" << endl;
          std::getline(std::cin, artist);
          cout << endl;
-         cout << "Enter song length:" << endl;
+         cout << "Enter song length (in minutes):" << endl;
          cin >> length;
          cout << endl;
          temp = new Song(name, artist, length);
@@ -112,6 +112,8 @@ void Playlist::display()
          cout << endl;
          analytics();
       }
+      else if (option != "E"){
+	  cout << "Invalid input, try again." << endl;
    }
 }
 
