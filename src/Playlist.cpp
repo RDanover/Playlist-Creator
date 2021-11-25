@@ -89,28 +89,28 @@ void Playlist::display()
       else if (option == "HS")
       {
          cout << endl;
-         // hid_unhide_song();
+         hide_unhide_song();
       }
 
       else if (option == "P")
       {
          cout << endl;
-         // play();
+         play();
       }
       else if (option == "PS")
       {
          cout << endl;
-         // play_song();
+         play_song();
       }
       else if (option == "S")
       {
          cout << endl;
-         // shuffle();
+         shuffle();
       }
       else if (option == "A")
       {
          cout << endl;
-         // analytics();
+         analytics();
       }
    }
 }
