@@ -22,7 +22,7 @@ void Playlist::display()
 
       std::cout << "(AS) - ADD SONG" << std::endl;
       // std::cout << std::endl;
-      std::cout << "(D) - DELETE SONG" << std::endl;
+      std::cout << "(DS) - DELETE SONG" << std::endl;
       // std::cout << std::endl;
       std::cout << "(H) - HIDE/UNHIDE SONG" << std::endl;
       // std::cout << std::endl;
