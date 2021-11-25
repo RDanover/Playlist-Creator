@@ -3,11 +3,11 @@
 #include "abs_playlist.hpp"
 #include <vector>
 #include <string>
-#include "Song.hpp"
+#include "Public_Song.hpp"
 
 using namespace std;
 
-class Playlist : public Abs_Playlist
+class Public_Playlist : public Abs_Playlist
 {
 private:
 	vector<Playable *> songs;
