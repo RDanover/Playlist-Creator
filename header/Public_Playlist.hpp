@@ -1,13 +1,13 @@
-#ifndef PLAYLIST_HPP
-#define PLAYLIST_HPP
-#include "Playable.hpp"
+#ifndef PUBLIC_PLAYLIST_HPP
+#define PUBLIC_PLAYLIST_HPP
+#include "abs_playlist.hpp"
 #include <vector>
 #include <string>
 #include "Song.hpp"
 
 using namespace std;
 
-class Playlist : public Playable
+class Playlist : public Abs_Playlist
 {
 private:
 	vector<Playable *> songs;
@@ -34,5 +34,5 @@ public:
 	bool song_exists(Playable *curr);
 };
 
-#endif // PLAYLIST_HPP
+#endif // PUBLIC_PLAYLIST_HPP
 
