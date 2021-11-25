@@ -97,7 +97,7 @@ void User_Menu::add_playlist()
 	//cout << "Input the playlist name: ";
 	//getline(cin, playlist_name);
 	Playlist* new_playlist = create_new_playlist();
-	if(new_playliist)
+	if(new_playlist)
 	{
 		user_playables.push_back(new_playlist);
 	}
