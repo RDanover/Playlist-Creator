@@ -16,7 +16,7 @@ private:
 	double length;
 
 public:
-	Playlist(string);
+	Private_Playlist(string);
 	string get_name() { return name; }
 	double get_length() { return length; }
 	void display();
