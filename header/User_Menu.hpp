@@ -15,12 +15,6 @@ private:
 	vector<Playable *> user_playables;
 
 public:
-	User_Menu()
-	{
-		user_playables.push_back(new Playlist("SICK SONGS"));
-		user_playables.push_back(new Playlist("Sad Songs"));
-		user_playables.push_back(new Playlist("Happy Songs"));
-	}
 	void add_playlist();
 	void display_options();
 	Playlist* create_new_playlist();
