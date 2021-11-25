@@ -9,7 +9,6 @@ using namespace std;
 class Abs_Song : public Playable
 {
 public:
-	virtual Song(string, string, double)= 0;
 	virtual string get_name()= 0;
 	virtual string get_artist() = 0;
 	virtual double get_length() = 0; 
