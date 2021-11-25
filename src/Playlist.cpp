@@ -102,6 +102,7 @@ void Playlist::display()
          cout << endl;
 	 string s;
 	 string a;
+	 cin.ignore();
 	 cout << "Enter song name:" << endl;
          std::getline(std::cin, s);
          cout << endl;
