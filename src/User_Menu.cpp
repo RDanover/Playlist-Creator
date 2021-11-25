@@ -46,6 +46,7 @@ Playlist* User_Menu::create_new_playlist(){
         	for(int i = 0; i < user_playables.size(); i++) {
             		if(user_playables.at(i)->get_name() == playlist_name) {
                	 		cout << "the name already exists!" << endl;
+				return nullptr;
             		}
         	}
 		return new Playlist(playlist_name);
@@ -96,7 +97,11 @@ void User_Menu::add_playlist()
 	//cout << "Input the playlist name: ";
 	//getline(cin, playlist_name);
 	Playlist* new_playlist = create_new_playlist();
-	user_playables.push_back(new_playlist);
+	if(new_playliist)
+	{
+		user_playables.push_back(new_playlist);
+	}
+	
 }
 
 void User_Menu::exit(){
