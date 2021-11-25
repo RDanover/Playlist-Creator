@@ -1,8 +1,8 @@
-#include "../header/Playlist.hpp"
+#include "../header/Public_Playlist.hpp"
 #include <stdlib.h>
 #include <time.h>
 #include <iterator>
-#include "../header/Song.hpp"
+#include "../header/Public_Song.hpp"
 #include <iostream>
 
 using namespace std;
@@ -367,7 +367,3 @@ void Playlist::analytics(){
 	else
 	std::cout << "You spent " << sum/60 << " minutes and " << sum%60 << " seconds listening to this playlist." << endl;
 }
-
-	// insert implementation
-// shuffled_songs = temp;
-
