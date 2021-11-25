@@ -1,4 +1,4 @@
-#include "../header/Song.hpp"
+#include "../header/Public_Song.hpp"
 
 Song::Song(string n, string a, double l){
         name = n;
