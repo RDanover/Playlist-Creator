@@ -100,7 +100,16 @@ void Playlist::display()
       else if (option == "PS")
       {
          cout << endl;
-         play_song();
+	 string s;
+	 string a;
+	 cout << "Enter song name:" << endl;
+         std::getline(std::cin, s);
+         cout << endl;
+         cout << "Enter artist name:" << endl;
+         std::getline(std::cin, a);
+         cout << endl;
+	      
+         play_song(s,a);
       }
       else if (option == "S")
       {
