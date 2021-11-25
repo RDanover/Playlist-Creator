@@ -1,9 +1,9 @@
 #ifndef PRIVATE_PLAYLIST_HPP
 #define PRIVATE_PLAYLIST_HPP
-#include "Abs_Playlist.hpp"
+#include "abs_playlist.hpp"
 #include <vector>
 #include <string>
-#include "Song.hpp"
+#include "Private_Song.hpp"
 
 using namespace std;
 
