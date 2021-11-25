@@ -83,7 +83,7 @@ void Playlist::display()
       else if (option == "DS")
       {
          cout << endl;
-         // delete_song();
+         delete_song();
       }
 
       else if (option == "HS")
