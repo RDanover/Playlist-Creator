@@ -4,9 +4,9 @@
 #include <vector>
 #include <string>
 #include "Public_Playlist.hpp"
-#inlcude "Private_Playlist.hpp"
+#include "Private_Playlist.hpp"
 #include "Playable.hpp"
-#inlcude "Private_Song.hpp"
+#include "Private_Song.hpp"
 #include "Public_Song.hpp"
 
 using namespace std;
