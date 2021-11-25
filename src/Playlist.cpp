@@ -24,7 +24,7 @@ void Playlist::display()
       // std::cout << std::endl;
       std::cout << "(DS) - DELETE SONG" << std::endl;
       // std::cout << std::endl;
-      std::cout << "(H) - HIDE/UNHIDE SONG" << std::endl;
+      std::cout << "(HS) - HIDE/UNHIDE SONG" << std::endl;
       // std::cout << std::endl;
       std::cout << "(P) - PLAY" << std::endl;
       // std::cout << std::endl;
@@ -204,7 +204,7 @@ void Playlist::delete_song()
 
 void Playlist::hide_unhide_song()
 {
-
+   cin.ignore();
    string songname = "";
    int indexOfSong = -1;
    cout << "Please enter the name of the song you would like to hide or unhide, or enter LEAVE, to return to the main menu." << endl;
