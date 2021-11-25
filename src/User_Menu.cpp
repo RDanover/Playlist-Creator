@@ -4,6 +4,7 @@ void User_Menu::display_options(){
   std::string option = "B";
   while (option != "E")
   {
+     std::cout << endl << "PLAYLIST MENU: ";
      std::cout << endl << endl;
      std::cout << "(AD) - ADD NEW PLAYLIST" << std::endl;
      std::cout << std::endl;
