@@ -58,7 +58,10 @@ void User_Menu::delete_playlist(){
 //purpose cont.: if input is correct the user willl be directed to the playlist of their choosing 
 //purpose cont.: if input is not correct user will be asked to try again or be sent back to the menu
 void User_Menu::access_playlist(){
-
+	if(user_playbles.size()==0){
+		cout<<"Please add a playlist before attempting to access a playlist."<<endl;
+		return;
+	}
 	//list playlists starting with a number to index them
 	for( unsigned i = 0 ; i < user_playables.size(); i++ ){
 		cout << i+1 << ". " << user_playables.at(i)->get_name() << endl;
