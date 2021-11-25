@@ -17,12 +17,16 @@ private:
 	vector<Playable *> user_playables;
 
 public:
-	void add_playlist();
-	void display_options();
-	Playlist* create_new_playlist();
-	void delete_playlist();
-	void access_playlist();
-	void exit();
+	void display_options(int);
+	void public_add_playlist();
+	Public_Playlist* public_create_new_playlist();
+	void public_delete_playlist();
+	void public_access_playlist();
+	
+	void private_add_playlist();
+	Private_Playlist* private_create_new_playlist();
+	void private_delete_playlist();
+	void private_access_playlist();
 };
 
 #endif // USER_MENU_HPP
