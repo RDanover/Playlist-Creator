@@ -1,12 +1,12 @@
-#ifndef SONG_HPP
-#define SONG_HPP
+#ifndef PUBLIC_SONG_HPP
+#define PUBLIC_SONG_HPP
 
-#include "Playable.hpp"
+#include "abs_song.hpp"
 #include <string>
 
 using namespace std;
 
-class Song : public Playable
+class Song : public Abs_Song
 {
 private:
 	string name;
@@ -26,5 +26,5 @@ public:
 	void increment_time_played() { num_time_played++; }
 };
 
-#endif // SONG_HPP
+#endif // PUBLIC_SONG_HPP
 
