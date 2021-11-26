@@ -151,7 +151,7 @@ void Public_Playlist::display_songs()
 }
 
 void Public_Playlist::add_song(string name, string artist, double length){
- 	Song* temp = new Public_Song(name, artist, length);
+ 	Public_Song* temp = new Public_Song(name, artist, length);
     songs.push_back(temp);
 }
 
