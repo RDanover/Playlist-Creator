@@ -183,10 +183,10 @@ void User_Menu::private_access_playlist(){
 	//check input then send user to the correct playlist
 	if( input < 0 || input > user_playables.size()){
 		cout << "Invalid input please try again"<<endl;
-		access_playlist();
+		private_access_playlist();
 	}
 	else if( input == 0){
-		display_options();
+		return;
 	}
 	else{
 		user_playables.at(input-1)->display();
