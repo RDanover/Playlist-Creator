@@ -7,12 +7,12 @@
 
 using namespace std;
 
-Playlist::Playlist(string n)
+Public_Playlist::Public_Playlist(string n)
 {
    name = n;
 }
 
-void Playlist::display()
+void Public_Playlist::display()
 {
    std::string option = "B";
    while (option != "E")
@@ -58,7 +58,7 @@ void Playlist::display()
          cout << "Enter song length (in minutes):" << endl;
          cin >> length;
          cout << endl;
-         temp = new Song(name, artist, length);
+         temp = new Public_Song(name, artist, length);
 
          if (song_exists(temp))
          {
@@ -68,14 +68,14 @@ void Playlist::display()
             cout << endl;
             if (duplicate == 'y')
             {
-               Playable *new_song = new Song(name, artist, length);
+               Playable *new_song = new Public_Song(name, artist, length);
                add_song(new_song);
                delete temp;
             }
          }
          else
          {
-            Playable *new_song = new Song(name, artist, length);
+            Playable *new_song = new Public_Song(name, artist, length);
             add_song(new_song);
          }
       }
@@ -129,7 +129,7 @@ void Playlist::display()
    }
 }
 
-bool Playlist::song_exists(Playable *curr)
+bool Public_Playlist::song_exists(Playable *curr)
 {
    for (unsigned int i = 0; i < songs.size(); i++)
    {
@@ -141,7 +141,7 @@ bool Playlist::song_exists(Playable *curr)
    return false;
 }
 
-void Playlist::display_songs()
+void Public_Playlist::display_songs()
 {
    for (unsigned int i = 0; i < songs.size(); i++)
    {
@@ -150,18 +150,18 @@ void Playlist::display_songs()
    cout << endl;
 }
 
-void Playlist::add_song(string name, string artist, double length){
- 	Song* temp = new Song(name, artist, length);
+void Public_Playlist::add_song(string name, string artist, double length){
+ 	Song* temp = new Public_Song(name, artist, length);
     songs.push_back(temp);
 }
 
 
-void Playlist::add_song(Playable *song)
+void Public_Playlist::add_song(Playable *song)
 {
    songs.push_back(song);
 }
 
-void Playlist::delete_song()
+void Public_Playlist::delete_song()
 {
    int input;
    string title;
@@ -203,7 +203,7 @@ void Playlist::delete_song()
    
 }
 
-void Playlist::hide_unhide_song()
+void Public_Playlist::hide_unhide_song()
 {
    cin.ignore();
    string songname = "";
@@ -248,7 +248,7 @@ void Playlist::hide_unhide_song()
    }
 }
 
-void Playlist::play(){
+void Public_Playlist::play(){
 	
 	if (songs.size() == 0){
   		std::cout << "Please add songs to play" << endl;
@@ -272,7 +272,7 @@ void Playlist::play(){
 
 	
 }
-void Playlist::play_song(string song, string artist){
+void Public_Playlist::play_song(string song, string artist){
      bool found = false;
      for (unsigned int i = 0; i < songs.size(); i++) {
            if (songs.at(i)->get_name() == song && songs.at(i)->get_artist() == artist) {
@@ -287,7 +287,7 @@ void Playlist::play_song(string song, string artist){
 	
 }
 
-void Playlist::shuffle()
+void Public_Playlist::shuffle()
 {
    if (songs.size() < 1)
    {
@@ -327,7 +327,7 @@ void Playlist::shuffle()
    return;
 }
 
-void Playlist::analytics(){
+void Public_Playlist::analytics(){
 
 	vector<int> v;
 	int max = songs.at(0)->get_num_time_played();
