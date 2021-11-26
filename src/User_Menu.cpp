@@ -115,10 +115,10 @@ void User_Menu::public_access_playlist(){
 	//check input then send user to the correct playlist
 	if( input < 0 || input > user_playables.size()){
 		cout << "Invalid input please try again"<<endl;
-		access_playlist();
+		public_access_playlist();
 	}
 	else if( input == 0){
-		display_options();
+		return;
 	}
 	else{
 		user_playables.at(input-1)->display();
@@ -141,7 +141,7 @@ void User_Menu::public_add_playlist()
 //END PUBLIC FUNCTIONS
 
 //START PRIVATE FUNCTIONS	
-Playlist* User_Menu::private_create_new_playlist(){
+Private_Playlist* User_Menu::private_create_new_playlist(){
 	string playlist_name;
 	cout << "Input the playlist name: ";
         cin >> playlist_name; // should be changed to getline 
