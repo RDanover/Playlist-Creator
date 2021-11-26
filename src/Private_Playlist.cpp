@@ -7,12 +7,12 @@
 
 using namespace std;
 
-Playlist::Playlist(string n)
+Private_Playlist::Private_Playlist(string n)
 {
    name = n;
 }
 
-void Playlist::display()
+void Private_Playlist::display()
 {
    std::string option = "B";
    while (option != "E")
@@ -56,7 +56,7 @@ void Playlist::display()
          cout << "Enter song length (in minutes):" << endl;
          cin >> length;
          cout << endl;
-         temp = new Song(name, artist, length);
+         temp = new Private_Song(name, artist, length);
 
          if (song_exists(temp))
          {
@@ -66,14 +66,14 @@ void Playlist::display()
             cout << endl;
             if (duplicate == 'y')
             {
-               Playable *new_song = new Song(name, artist, length);
+               Playable *new_song = new Private_Song(name, artist, length);
                add_song(new_song);
                delete temp;
             }
          }
          else
          {
-            Playable *new_song = new Song(name, artist, length);
+            Playable *new_song = new Private_Song(name, artist, length);
             add_song(new_song);
          }
       }
@@ -144,7 +144,7 @@ void Playlist::display_songs()
 }
 
 void Playlist::add_song(string name, string artist, double length){
- 	Song* temp = new Song(name, artist, length);
+ 	Song* temp = new Private_Song(name, artist, length);
     songs.push_back(temp);
 }
 
