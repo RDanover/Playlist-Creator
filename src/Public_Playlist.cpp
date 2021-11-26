@@ -45,7 +45,7 @@ void Public_Playlist::display()
          std::string name;
          std::string artist;
          double length;
-         Song *temp = nullptr;
+         Public_Song *temp = nullptr;
          char duplicate;
          std::cout << endl;
          std::cin.ignore();
