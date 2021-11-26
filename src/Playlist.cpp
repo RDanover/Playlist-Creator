@@ -249,7 +249,7 @@ void Playlist::hide_unhide_song()
 }
 
 void Playlist::play(){
-	
+//bug:should check if song is hidden before playing
 	if (songs.size() == 0){
   		std::cout << "Please add songs to play" << endl;
   		display();
@@ -328,7 +328,8 @@ void Playlist::shuffle()
 }
 
 void Playlist::analytics(){
-
+//bugs: the sum function isnt working as expected
+// : throws error if playlist is empty, check if playlist is empty before running through
 	vector<int> v;
 	int max = songs.at(0)->get_num_time_played();
 	
