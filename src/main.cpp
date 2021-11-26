@@ -11,6 +11,7 @@ int main()
 	cout << "You will then be able to \"listen\" to these songs along with various other features."<<endl<<endl<<endl;
 
 	User_Menu* menu = new User_Menu();
+	string input = "";
 	while(input.compare("NO")!=0&&input.compare("YES")!=0){
 
 		cout<<"This program has the option of viewing your listening analytics.";
@@ -20,11 +21,11 @@ int main()
 		getline(cin,input);
 		cout<<endl;
 		
-		if((input.compare("NO")!=0&&input.compare("YES")!=0){
+		if(input.compare("NO")!=0&&input.compare("YES")!=0){
 			cout<<"INVALID INPUT. Please try again."<<endl;
 		}
 	}
-	if(input.compare("NO"){
+	if(input.compare("NO")){
 		menu->display_options(0);
 	}
 	else{
