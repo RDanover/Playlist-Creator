@@ -25,7 +25,7 @@ int main()
 			cout<<"INVALID INPUT. Please try again."<<endl;
 		}
 	}
-	if(input.compare("NO")){
+	if(input.compare("NO")==0){
 		cout<<"you have chosen private playlist"<<endl;
 		menu->display_options(0);	
 	}
