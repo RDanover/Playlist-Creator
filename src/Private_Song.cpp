@@ -1,14 +1,12 @@
 #include "../header/Private_Song.hpp"
 
-Song::Song(string n, string a, double l){
+Private_Song::Private_Song(string n, string a, double l){
         name = n;
         artist = a;
         length = l;
-        hidden = false;
-        num_time_played = 0;
 }
 
-void Song::set_hidden_status(){
+void Private_Song::set_hidden_status(){
         if(hidden){
                 hidden = false;
         }
