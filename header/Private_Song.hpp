@@ -12,9 +12,10 @@ private:
 	string name;
 	string artist;
 	double length;
+	bool hidden;
 	
 public:
-	Song(string, string, double);
+	Private_Song(string, string, double);
 	string get_name() { return name; }
 	string get_artist() { return artist; }
 	double get_length() { return length; }
