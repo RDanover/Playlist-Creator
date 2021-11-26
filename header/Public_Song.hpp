@@ -16,7 +16,7 @@ private:
 	int num_time_played;
 
 public:
-	Song(string, string, double);
+	Public_Song(string, string, double);
 	string get_name() { return name; }
 	string get_artist() { return artist; }
 	double get_length() { return length; }
