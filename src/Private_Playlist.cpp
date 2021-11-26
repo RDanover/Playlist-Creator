@@ -43,7 +43,7 @@ void Private_Playlist::display()
          std::string name;
          std::string artist;
          double length;
-         Song *temp = nullptr;
+         Private_Song *temp = nullptr;
          char duplicate;
          std::cout << endl;
          std::cin.ignore();
@@ -144,7 +144,7 @@ void Private_Playlist::display_songs()
 }
 
 void Private_Playlist::add_song(string name, string artist, double length){
- 	Song* temp = new Private_Song(name, artist, length);
+ 	Private_Song* temp = new Private_Song(name, artist, length);
     songs.push_back(temp);
 }
 
