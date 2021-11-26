@@ -4,6 +4,7 @@ Private_Song::Private_Song(string n, string a, double l){
         name = n;
         artist = a;
         length = l;
+        hidden = false;
 }
 
 void Private_Song::set_hidden_status(){
