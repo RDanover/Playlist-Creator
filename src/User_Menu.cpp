@@ -2,7 +2,6 @@
 #include <iostream>
 void User_Menu::display_options(int d){
   std::string option = "B";
-  cout<<"d="<<d<<endl;
   if(d==1){//public
 	while (option != "E")
   	{
