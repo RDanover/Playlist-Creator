@@ -17,6 +17,7 @@ void User_Menu::display_options(int d){
      		std::cout << std::endl << std::endl;
      		std::cout << "ENTER OPTION:" << endl;
      		cin >> option;
+		cin.ignore();
       
      		if(option == "AD") {
 			public_add_playlist();
@@ -51,6 +52,7 @@ void User_Menu::display_options(int d){
      		std::cout << std::endl << std::endl;
      		std::cout << "ENTER OPTION:" << endl;
      		cin >> option;
+		cin.ignore();
       
      		if(option == "AD") {
 			private_add_playlist();
