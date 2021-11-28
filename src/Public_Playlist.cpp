@@ -39,7 +39,8 @@ void Public_Playlist::display()
       std::cout << "ENTER OPTION:" << endl;
 
       std::cin >> option;
-	
+	cin.ignore();
+	   
       if (option == "AS")
       {
          std::string name;
@@ -48,7 +49,6 @@ void Public_Playlist::display()
          Public_Song *temp = nullptr;
          char duplicate;
          std::cout << endl;
-         std::cin.ignore();
          cout << "Enter song name:" << endl;
          std::getline(std::cin, name);
          cout << endl;
@@ -65,6 +65,7 @@ void Public_Playlist::display()
             cout << "Add song again? - Song already exists in playlist" << endl;
             cout << "Enter (y/n):" << endl;
             cin >> duplicate;
+	    cin.ignore();
             cout << endl;
             if (duplicate == 'y')
             {
@@ -102,7 +103,6 @@ void Public_Playlist::display()
          cout << endl;
 	 string s;
 	 string a;
-	 cin.ignore();
 	 cout << "Enter song name:" << endl;
          std::getline(std::cin, s);
          cout << endl;
@@ -172,7 +172,6 @@ void Public_Playlist::delete_song()
    if(input == 1)
    {
 	cout << "Enter title: ";
-	cin.ignore();
         getline(cin, title);
 	for(int i = 0; i < songs.size(); i++) {
 	    if(songs.at(i)->get_name() == title) {
@@ -186,6 +185,7 @@ void Public_Playlist::delete_song()
    {
 	cout << "Enter the order: ";
 	cin >> order;
+	cin.ignore();
 	if(order < 1 || order > songs.size()){
 	    cout << "Invalid order" << endl;
 	    return;
@@ -205,7 +205,6 @@ void Public_Playlist::delete_song()
 
 void Public_Playlist::hide_unhide_song()
 {
-   cin.ignore();
    string songname = "";
    int indexOfSong = -1;
    cout << "Please enter the name of the song you would like to hide or unhide, or enter LEAVE, to return to the main menu." << endl;
@@ -213,7 +212,6 @@ void Public_Playlist::hide_unhide_song()
    cout << endl;
    if (songname.compare("LEAVE") == 0)
    {
-      // display_options();
       return;
    }
    else
@@ -236,12 +234,12 @@ void Public_Playlist::hide_unhide_song()
          if (songs.at(indexOfSong)->get_hidden_status())
          {
             songs.at(indexOfSong)->set_hidden_status();
-            cout << songs.at(indexOfSong)->get_name() << " Has been unhidden." << endl;
+            cout << songs.at(indexOfSong)->get_name() << " has been unhidden." << endl;
          }
          else
          {
             songs.at(indexOfSong)->set_hidden_status();
-            cout << songs.at(indexOfSong)->get_name() << " Has been hidden." << endl;
+            cout << songs.at(indexOfSong)->get_name() << " has been hidden." << endl;
          }
          return;
       }
@@ -252,7 +250,6 @@ void Public_Playlist::play(){
 	
 	if (songs.size() == 0){
   		std::cout << "Please add songs to play" << endl;
-  		display();
 		return;
 	}
 
