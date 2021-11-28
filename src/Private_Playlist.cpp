@@ -250,14 +250,22 @@ void Private_Playlist::play(){
 	}
 
 	if(songs.size() > 0){
-  		std::cout << "Now playing: " << songs.at(0)->get_name() << ", by " << songs.at(0)->get_artist() << endl;
+		if (!songs.at(0)->get_hidden_status())
+      		{
+        		std::cout << "Now playing: " << songs.at(0)->get_name() << ", by " << songs.at(0)->get_artist() << endl;;
+      		}
+
 	}
 	
 	 if(songs.size() > 1){
 	  std::cout << "Upcoming songs: " << endl; 
 		for( unsigned int i = 1; i < songs.size(); i++){
-			std::cout << songs.at(i)->get_name() << ", by " << songs.at(i)->get_artist() << endl;
+			if (!songs.at(i)->get_hidden_status())
+      			{
+         			std::cout << songs.at(i)->get_name() << ", by " << songs.at(i)->get_artist() << endl;
 
+      			}
+			
 		}
 	}
 
