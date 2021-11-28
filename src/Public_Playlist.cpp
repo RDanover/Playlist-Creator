@@ -338,13 +338,13 @@ void Public_Playlist::shuffle()
 
 void Public_Playlist::analytics(){
 
-	vector<int> v;
-	int max = songs.at(0)->get_num_time_played();
-	
 	if(songs.size()==0){//checks if playlist is empty before performing analytics
 		cout<<"Please add songs before retrieving analytics."<<endl;
 		return;
 	}
+	
+	vector<int> v;
+	int max = songs.at(0)->get_num_time_played();
 	
 	for(unsigned int i = 0; i < songs.size(); i++){ // find max time played
 		if(songs.at(i)->get_num_time_played() > max)
