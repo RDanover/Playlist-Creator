@@ -81,6 +81,11 @@ void Playlist::hide_unhide_song(){
 	//insert implementation
 }
 
+void Playlist::deleteP(){//helper function
+	for(unsigned int i = 0; i < songs.size(); i++) 
+	    songs.erase(songs.begin()+i);
+}
+
 void Playlist::play(){
 	
 	if (songs.size() == 0){
@@ -96,7 +101,7 @@ void Playlist::play(){
 	if(songs.size() > 1){
 		cout << "Upcoming songs: " << endl; 
 		for( unsigned i = 1; i < songs.size(); i++){
-			cout << songs.at(i)->get_name() << ", by " << songs.at(i)->get_artist << endl;
+			cout << songs.at(i)->get_name() << ", by " << songs.at(i)->get_artist() << endl;
 		}
 	}
 
