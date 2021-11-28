@@ -77,7 +77,7 @@ void User_Menu::display_options(int d){
 Public_Playlist* User_Menu::public_create_new_playlist(){
 	string playlist_name;
 	cout << "Input the playlist name: ";
-        cin >> playlist_name; // should be changed to getline 
+        getline(cin,playlist_name);
 	
 	while(1){
         	for(int i = 0; i < user_playables.size(); i++) {
@@ -145,7 +145,7 @@ void User_Menu::public_add_playlist()
 Private_Playlist* User_Menu::private_create_new_playlist(){
 	string playlist_name;
 	cout << "Input the playlist name: ";
-        cin >> playlist_name; // should be changed to getline 
+        getline(cin,playlist_name);
 	
 	while(1){
         	for(int i = 0; i < user_playables.size(); i++) {
