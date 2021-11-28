@@ -39,7 +39,7 @@ void Public_Playlist::display()
       std::cout << "ENTER OPTION:" << endl;
 
       std::cin >> option;
-	cin.ignore();
+      cin.ignore();
 	   
       if (option == "AS")
       {
@@ -67,6 +67,7 @@ void Public_Playlist::display()
             cout << "Enter (y/n):" << endl;
             cin >> duplicate;
 	    cin.ignore();
+		 
             cout << endl;
             if (duplicate == 'y')
             {
@@ -170,6 +171,8 @@ void Public_Playlist::delete_song()
    cout << "Enter 1 if you want to delete a song by titles" << endl;
    cout << "Enter 2 if you want to delete a song by order" << endl;
    cin >> input;
+   cin.ignore();
+	
    if(input == 1)
    {
 	cout << "Enter title: ";
