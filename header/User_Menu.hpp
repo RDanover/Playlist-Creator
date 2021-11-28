@@ -9,20 +9,19 @@
 
 using namespace std;
 
-class User_Menu {
-    private:
-	vector<Playable*> user_playables;	        
-    public:
-	User_Menu(){
-		user_playables.push_back(new Playlist("SICK SONGS"));
-		user_playables.push_back(new Playlist("Sad Songs"));
-		user_playables.push_back(new Playlist("Happy Songs"));
-	}
+class User_Menu
+{
+private:
+	vector<Playable *> user_playables;
+
+public:
+	void add_playlist();
 	void display_options();
-	void create_new_playlist();
+	Playlist* create_new_playlist();
 	void delete_playlist();
 	void access_playlist();
 	void exit();
 };
 
 #endif // USER_MENU_HPP
+

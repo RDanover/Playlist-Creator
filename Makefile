@@ -68,10 +68,10 @@ RM = /usr/bin/cmake3 -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002
+CMAKE_SOURCE_DIR = /home/csmajs/skang121/final2/final-project-mgolw001-rdano001-skang121-vgondi002
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002
+CMAKE_BINARY_DIR = /home/csmajs/skang121/final2/final-project-mgolw001-rdano001-skang121-vgondi002
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -146,9 +146,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/skang121/final2/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles /home/csmajs/skang121/final2/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/skang121/final2/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -268,6 +268,60 @@ src/Playlist.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/src/Playlist.cpp.s
 .PHONY : src/Playlist.cpp.s
 
+src/Song.o: src/Song.cpp.o
+
+.PHONY : src/Song.o
+
+# target to build an object file
+src/Song.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/src/Song.cpp.o
+.PHONY : src/Song.cpp.o
+
+src/Song.i: src/Song.cpp.i
+
+.PHONY : src/Song.i
+
+# target to preprocess a source file
+src/Song.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/src/Song.cpp.i
+.PHONY : src/Song.cpp.i
+
+src/Song.s: src/Song.cpp.s
+
+.PHONY : src/Song.s
+
+# target to generate assembly for a file
+src/Song.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/src/Song.cpp.s
+.PHONY : src/Song.cpp.s
+
+src/User_Menu.o: src/User_Menu.cpp.o
+
+.PHONY : src/User_Menu.o
+
+# target to build an object file
+src/User_Menu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/src/User_Menu.cpp.o
+.PHONY : src/User_Menu.cpp.o
+
+src/User_Menu.i: src/User_Menu.cpp.i
+
+.PHONY : src/User_Menu.i
+
+# target to preprocess a source file
+src/User_Menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/src/User_Menu.cpp.i
+.PHONY : src/User_Menu.cpp.i
+
+src/User_Menu.s: src/User_Menu.cpp.s
+
+.PHONY : src/User_Menu.s
+
+# target to generate assembly for a file
+src/User_Menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/src/User_Menu.cpp.s
+.PHONY : src/User_Menu.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -315,6 +369,12 @@ help:
 	@echo "... src/Playlist.o"
 	@echo "... src/Playlist.i"
 	@echo "... src/Playlist.s"
+	@echo "... src/Song.o"
+	@echo "... src/Song.i"
+	@echo "... src/Song.s"
+	@echo "... src/User_Menu.o"
+	@echo "... src/User_Menu.i"
+	@echo "... src/User_Menu.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
