@@ -375,9 +375,6 @@ void Public_Playlist::analytics(){
 		sum += songs.at(i)->get_num_time_played() * songs.at(i)->get_length(); 
 	}
 	
-	if (sum%60 == 0)
-	std::cout << "You spent " << sum/60 << " minutes listening to this playlist." << endl;
+	std::cout << "You spent " << sum<< " minutes listening to this playlist." << endl;
 	
-	else
-	std::cout << "You spent " << sum/60 << " minutes and " << sum%60 << " seconds listening to this playlist." << endl;
 }
