@@ -57,6 +57,7 @@ void Public_Playlist::display()
          cout << endl;
          cout << "Enter song length (in minutes):" << endl;
          cin >> length;
+	 cin.ignore();
          cout << endl;
          temp = new Public_Song(name, artist, length);
 
