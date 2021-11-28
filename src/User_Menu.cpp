@@ -28,9 +28,9 @@ for(unsigned int i = 0 ; i < user_playables.size(); i++ ){
 	
 	else{
 		string n = user_playables.at(input-1)->get_name();
-		for(unsigned int i = 0; i < user_playables.at(input-1)->get_length(); i++){
-			delete user_playables.at(input-1)->at(i);
-			}
+		//for(unsigned int i = 0; i < user_playables.at(input-1)->get_length(); i++){
+			user_playables.at(input-1)->deleteP();
+		//	}
 			delete user_playables.at(input-1);
 		cout << n << " was deleted" << endl; 
 	}
