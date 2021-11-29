@@ -16,7 +16,7 @@ We are going to use Vim, Visual Studio, Xcode. All inputs and outputs will take 
 The user will input the song name and artist, and the playlist they created will be outputted. The songs will not actually play but will instead say "Now playing \<insert songname>\."
 
 ### Feature
-Users can also choose to play, skip, and shuffle songs. In addition, they will be able to name the playlist and have the option to see a summary of their music habits (similar to Spotify Wrapped). Our songs will be held in a vector as pointers make it convenient to add and remove songs, and to change the order for the shuffle feature.
+Users can also choose to play their entire playlist, shuffle play their playlist, and hide songs to keep them from playing. In addition, they will be able to name the playlist and have the option to see a summary of their music habits (similar to Spotify Wrapped). Our songs will be held in a vector as pointers make it convenient to add and remove songs, and to change the order for the shuffle feature.
 
 ## Phase II
 
@@ -24,7 +24,7 @@ Users can also choose to play, skip, and shuffle songs. In addition, they will b
 ![Screenshot (10)](https://user-images.githubusercontent.com/60625627/142710944-fa7bd646-d6a3-47c5-81bd-b917f0aba7f5.png)
 
 ### Description of diagram
-Our project will feature two interfaces, one where the user can see their playlists and choose to delete them or add more, this is also where users will access their playlists. This interface will hold a vector of playable pointers making it a composition of the playable class, a playlist can have one user but a user can have 0 to any positive integer number of playlists. Our second interface will be the playlist interface which will allow users to play the songs in their playlist, delete songs, hide them, or add new ones, they will also be able to view analytics about their listening habits if they choose to have their data collected. This interface will feature two vectors composed of song object pointers making the playlist class a composition of the song class. The song class is simply a leaf class and will not be directly accessed by the user. A playlist can have 0 to many songs, however (with our implementation) a song will only belong to one playlist. 
+Our project will feature two interfaces, one where the user can see their playlists and choose to delete them or add more, this is also where users will access their playlists. This interface will hold a vector of playable pointers making it a composition of the playable class, a playlist can have one user but a user can have 0 to any positive integer number of playlists. Our second interface will be the playlist interface which will allow users to play the songs in their playlist, delete songs, hide them, or add new ones, they will also be able to view analytics about their listening habits if they choose to have their data collected. This interface will feature two vectors composed of playable object pointers making the playlist class a composition of the playable class. The song class is simply a leaf class and will not be directly accessed by the user. A playlist can have 0 to many songs, however (with our implementation) a song will only belong to one playlist. 
  
  ## Phase III
  ### Composite Pattern:
@@ -42,7 +42,8 @@ Our project will feature two interfaces, one where the user can see their playli
  ## Screenshots
  > Screenshots of the input/output after running your application
  ## Installation/Usage
- > Instructions on installing and running your application
+ To use our project click the code button and copy the url, you can then clone the repository into an IDE of your choosing. If you are using hammer use the command "git clone --recursive <githuburl>". Once you have a copy, enter into the directory and type "cmake3 ." followed by "make" then to run the program type "./output". To interact with the program type your responses into the keyboard and hit the enter key when you have finished typing your response. Please enjoy our playlist program. 
+ 
  ## Testing
- > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
+Our program was tested via a test.cpp file which contained a second main function containing various tests for all of our functions. For some functions, special test functions were made to avoid having to ask for input while running tests. 
  
