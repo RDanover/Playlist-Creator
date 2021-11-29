@@ -113,7 +113,8 @@ void User_Menu::public_delete_playlist(){
 	else{
 		string n = user_playables.at(input-1)->get_name();
 			user_playables.at(input-1)->deleteP();
-			delete user_playables.at(input-1);
+		user_playables.erase(user_playables.begin()+input-1);
+			//delete user_playables.at(input-1);
 		cout<<"the size of playables is:"<<user_playables.size()<<endl;
 		cout << n << " was deleted" << endl; 
 	}
@@ -154,9 +155,6 @@ void User_Menu::public_access_playlist(){
 
 void User_Menu::public_add_playlist()
 {	
-	//string playlist_name;
-	//cout << "Input the playlist name: ";
-	//getline(cin, playlist_name);
 	Public_Playlist* new_playlist = public_create_new_playlist();
 	if(new_playlist)
 	{
@@ -205,8 +203,9 @@ void User_Menu::private_delete_playlist(){
 	else{
 		string n = user_playables.at(input-1)->get_name();
 			user_playables.at(input-1)->deleteP();
-			delete user_playables.at(input-1);
-		cout<<"the size of playables is:"<<user_playables.size()<<endl;
+			user_playables.erase(user_playables.begin()+input-1);
+		
+			//delete user_playables.at(input-1);
 		cout << n << " was deleted" << endl; 
 	}
 }
@@ -246,9 +245,6 @@ void User_Menu::private_access_playlist(){
 
 void User_Menu::private_add_playlist()
 {	
-	//string playlist_name;
-	//cout << "Input the playlist name: ";
-	//getline(cin, playlist_name);
 	Private_Playlist* new_playlist = private_create_new_playlist();
 	if(new_playlist)
 	{
