@@ -112,10 +112,10 @@ void User_Menu::public_delete_playlist(){
 	
 	else{
 		string n = user_playables.at(input-1)->get_name();
-		//for(unsigned int i = 0; i < user_playables.at(input-1)->get_length(); i++){
+	
 			user_playables.at(input-1)->deleteP();
-		//	}
-			delete user_playables.at(input-1);
+			user_playables.erase(user_playables.begin()+input-1);
+
 		cout << n << " was deleted" << endl; 
 	}
 }
@@ -205,10 +205,9 @@ void User_Menu::private_delete_playlist(){
 	
 	else{
 		string n = user_playables.at(input-1)->get_name();
-		//for(unsigned int i = 0; i < user_playables.at(input-1)->get_length(); i++){
 			user_playables.at(input-1)->deleteP();
-		//	}
-			delete user_playables.at(input-1);
+			user_playables.erase(user_playables.begin()+input-1);
+
 		cout << n << " was deleted" << endl; 
 	}
 }
