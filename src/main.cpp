@@ -5,6 +5,7 @@ using namespace std;
 
 int main()
 {
+	cout<<"BUGFIXBRANCH"<<endl;
 	cout <<endl;
 	cout << "Welcome to our playlist program. "; 
 	cout << "In this program you will be able to make multiple playlists and add songs to each of them. "; 
