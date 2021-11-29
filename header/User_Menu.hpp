@@ -28,6 +28,8 @@ public:
 	Private_Playlist* private_create_new_playlist();
 	void private_delete_playlist();
 	void private_access_playlist();
+	
+	int access_playlist(); //testing purposes only
 };
 
 #endif // USER_MENU_HPP
