@@ -375,3 +375,101 @@ void Public_Playlist::deleteP(){//helper function
 	for(unsigned int i = 0; i < songs.size(); i++) 
 	    songs.erase(songs.begin()+i);
 }
+
+int Public_Playlist::hide_unhide_song(int tn, string input)//testing purposes only
+{
+//    string songname = "";
+   int indexOfSong = -1;
+   if(tn==3){
+	   indexOfSong = 1;
+   }
+//    cout << "Please enter the name of the song you would like to hide or unhide, or enter LEAVE, to return to the main menu." << endl;
+//    getline(cin, songname);
+//    cout << endl;
+   if (input.compare("LEAVE") == 0)
+   {
+      //return;
+      return 1;
+   }
+   else
+   {
+      for (unsigned i = 0; i < songs.size(); i++)
+      {
+         if (songs.at(i)->get_name().compare(input) == 0)
+         {
+            indexOfSong = i;
+         }
+	 
+      }
+      if (indexOfSong == -1)
+      {
+// 	    cout << "Song not found. Please try again" << endl;
+//          hide_unhide_song();
+//          return;
+	    return 2;
+      }
+      else
+      {
+//          if (songs.at(indexOfSong)->get_hidden_status())
+//          {
+//             songs.at(indexOfSong)->set_hidden_status();
+//             cout << songs.at(indexOfSong)->get_name() << " has been unhidden." << endl;
+//          }
+//          else
+//          {
+//             songs.at(indexOfSong)->set_hidden_status();
+//             cout << songs.at(indexOfSong)->get_name() << " has been hidden." << endl;
+//          }
+//          return;
+	    return 3;
+      }
+   }
+}
+
+int Public_Playlist::shuffle(int tn, int input)//testing purposes only
+{
+   if (songs.size() < 1)
+   {
+//       cout << "Please add songs before trying to shuffle the plaaylist" << endl;
+//       return;
+	 return 1;
+   }
+
+   shuffled_songs = songs;
+
+//    vector<Playable *> temp;
+//    temp = songs;
+
+//    vector<Playable *>::iterator ptr;
+
+//    srand(time(NULL)); // setting the seed based on the current time
+
+//    int randInt = 0;
+      int counter = 0;
+
+   for (int i = 0; i < songs.size(); i++)
+   { 
+//       randInt = rand() % (temp.size());
+//       ptr = temp.begin();
+//       shuffled_songs.at(i) = temp.at(randInt);
+//       ptr += randInt;
+//       temp.erase(ptr);
+	   counter+=1;
+   }
+   if(tn==2){
+	   return counter;
+   }
+	counter=0;
+//    cout << "Songs have been shuffled, now playing playlist" << endl;
+   for (int i = 0; i < shuffled_songs.size(); i++)
+   {
+//       if (!shuffled_songs.at(i)->get_hidden_status())
+//       {
+//          cout << "Playing: " << shuffled_songs.at(i)->get_name() << " by: " << shuffled_songs.at(i)->get_artist() << " for " << shuffled_songs.at(i)->get_length() << " minutes." << endl;
+//          shuffled_songs.at(i)->increment_time_played(); // will need to be removed for the private playlist
+//       }
+	  counter+=1;
+   }
+//    return;
+return counter;
+}

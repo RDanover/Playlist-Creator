@@ -1,5 +1,17 @@
 #include "../header/User_Menu.hpp"
 #include <iostream>
+
+User_Menu::~User_Menu(){
+	if(user_playables.size()!=0){
+		
+		for(int i=0;i<user_playables.size();i++){
+			user_playables.at(i)->deleteP();
+		}
+		user_playables.clear();
+		
+	}
+}
+
 void User_Menu::display_options(int d){
   std::string option = "B";
   if(d==1){//public
@@ -92,7 +104,30 @@ Public_Playlist* User_Menu::public_create_new_playlist(){
 }
 
 void User_Menu::public_delete_playlist(){
-	//insert implemenation
+	for(unsigned int i = 0 ; i < user_playables.size(); i++ ){
+		cout << i+1 << ". " << user_playables.at(i)->get_name() << endl;
+    }
+    
+    int input = 0;
+    cout << "Please type the number next to the playlist you would like to delete, or to return to options press 0 and enter" << endl;
+    cin >> input;
+    cin.ignore();
+    
+    if( input < 0 || input > user_playables.size()){
+		cout << "Invalid input please try again"<<endl;
+		public_delete_playlist();
+	}
+	
+	else if( input == 0) {
+		return;
+	}
+	
+	else{
+		string n = user_playables.at(input-1)->get_name();
+		user_playables.at(input-1)->deleteP();
+		user_playables.erase(user_playables.begin()+input-1);
+		cout << n << " was deleted" << endl; 
+	}
 }
 
 //Function Name: access_playlist()
@@ -130,9 +165,6 @@ void User_Menu::public_access_playlist(){
 
 void User_Menu::public_add_playlist()
 {	
-	//string playlist_name;
-	//cout << "Input the playlist name: ";
-	//getline(cin, playlist_name);
 	Public_Playlist* new_playlist = public_create_new_playlist();
 	if(new_playlist)
 	{
@@ -160,7 +192,30 @@ Private_Playlist* User_Menu::private_create_new_playlist(){
 }
 
 void User_Menu::private_delete_playlist(){
-	//insert implemenation
+	for(unsigned int i = 0 ; i < user_playables.size(); i++ ){
+		cout << i+1 << ". " << user_playables.at(i)->get_name() << endl;
+    }
+    
+    int input = 0;
+    cout << "Please type the number next to the playlist you would like to delete, or to return to options press 0 and enter" << endl;
+    cin >> input;
+    cin.ignore();
+    
+    if( input < 0 || input > user_playables.size()){
+		cout << "Invalid input please try again"<<endl;
+		private_delete_playlist();
+	}
+	
+	else if( input == 0) {
+		return;
+	}
+	
+	else{
+		string n = user_playables.at(input-1)->get_name();
+		user_playables.at(input-1)->deleteP();
+		user_playables.erase(user_playables.begin()+input-1);
+		cout << n << " was deleted" << endl; 
+	}
 }
 
 //Function Name: access_playlist()
@@ -198,13 +253,58 @@ void User_Menu::private_access_playlist(){
 
 void User_Menu::private_add_playlist()
 {	
-	//string playlist_name;
-	//cout << "Input the playlist name: ";
-	//getline(cin, playlist_name);
 	Private_Playlist* new_playlist = private_create_new_playlist();
 	if(new_playlist)
 	{
 		user_playables.push_back(new_playlist);
 	}
 	
+}
+
+//USED FOR TESTING PURPOSES ONLY
+int User_Menu::access_playlist(int tn, int input){
+	if(user_playables.size()==0){
+		//cout<<"Please add a playlist before attempting to access a playlist."<<endl;
+		//return;
+		return 1;
+	}
+	
+	
+	//list playlists starting with a number to index them
+	int sum = 0;
+	for( unsigned i = 0 ; i < user_playables.size(); i++ ){
+		//cout << i+1 << ". " << user_playables.at(i)->get_name() << endl;
+		sum+=1;
+        }
+	if(tn ==2){
+		return sum;
+	}
+
+// 	//ask for user input
+// 	int input = 0;
+// 	cout << "Please type the number next to the playlist you would like to access and hit enter, or to return to options press 0 and hit enter" << endl;
+// 	cin >> input;	
+// 	cin.ignore();//clears the newline left in th stream incase getline is used after this
+// 	//check input then send user to the correct playlist
+	
+	if( input < 0 || input > user_playables.size()){
+		
+		//cout << "Invalid input please try again"<<endl;
+		//public_access_playlist();
+		return 3;
+	}
+	else if( input == 0){
+		//return;
+		return 4;
+	}
+	else{
+// 		user_playables.at(input-1)->display();
+		return 5;
+	}
+	return -1;
+}
+void User_Menu::add_playlist()//testing purposes only
+{	
+	Public_Playlist* new_playlist = new Public_Playlist("name");
+	user_playables.push_back(new_playlist);
 }

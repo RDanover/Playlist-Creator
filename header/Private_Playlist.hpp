@@ -36,3 +36,4 @@ public:
 };
 
 #endif // PLAYLIST_HPP
+
