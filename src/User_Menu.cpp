@@ -265,7 +265,7 @@ void User_Menu::private_add_playlist()
 int User_Menu::access_playlist(int tn, int input){
 	if(user_playables.size()==0){
 		//cout<<"Please add a playlist before attempting to access a playlist."<<endl;
-		//return
+		//return;
 		return 1;
 	}
 	
@@ -293,12 +293,14 @@ int User_Menu::access_playlist(int tn, int input){
 		//public_access_playlist();
 		return 3;
 	}
-// 	else if( input == 0){
-// 		return;
-// 	}
-// 	else{
+	else if( input == 0){
+		//return;
+		return 4;
+	}
+	else{
 // 		user_playables.at(input-1)->display();
-// 	}
+		return 5;
+	}
 	return -1;
 }
 void User_Menu::add_playlist()//testing purposes only
