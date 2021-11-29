@@ -5,11 +5,13 @@ User_Menu::~User_Menu(){
 	if(user_playables.size()==0){
 		user_playables.clear();
 	}
-	
-	for(int i=0;i<user_playables.size();i++){
-		user_playables.at(i)->deleteP();
+	else{
+		
+		for(int i=0;i<user_playables.size();i++){
+			user_playables.at(i)->deleteP();
+		}
+		user_playables.clear();
 	}
-	user_playables.clear();
 }
 
 void User_Menu::display_options(int d){
