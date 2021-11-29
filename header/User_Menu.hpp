@@ -27,6 +27,8 @@ public:
 	Private_Playlist* private_create_new_playlist();
 	void private_delete_playlist();
 	void private_access_playlist();
+        
+        string end_playlist_name();
 };
 
 #endif // USER_MENU_HPP

@@ -208,3 +208,7 @@ void User_Menu::private_add_playlist()
 	}
 	
 }
+
+string User_Menu::end_playlist_name() {
+       return user_playables.at(user_playables.size()-1)->get_name();
+}

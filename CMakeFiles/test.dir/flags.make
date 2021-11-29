@@ -4,7 +4,7 @@
 # compile CXX with /opt/rh/devtoolset-6/root/usr/bin/c++
 CXX_FLAGS =   -std=gnu++11
 
-CXX_DEFINES = -Dgtest_disable_pthreads=ON
+CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem /home/csmajs/skang121/final-project-mgolw001-rdano001-skang121-vgondi002/googletest/googletest/include -isystem /home/csmajs/skang121/final-project-mgolw001-rdano001-skang121-vgondi002/googletest/googletest 
+CXX_INCLUDES = 
 
