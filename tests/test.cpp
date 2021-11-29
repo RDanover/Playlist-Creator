@@ -25,14 +25,14 @@ int main()
             }
             cout<<"End test one."<<endl;
     
-        cout<<"Test two: check that all playlists are printed to the user"<<endl;
+            cout<<"Test two: check that all playlists are printed to the user"<<endl;
             User_Menu* access_playlist_test_two = new User_Menu();
             access_playlist_test_two->add_playlist();
             access_playlist_test_two->add_playlist();
             access_playlist_test_two->add_playlist();
             int access_playlist_test_two_result = access_playlist_test_two->access_playlist(2);
             cout<<"Test Result: ";
-            if(access_playlist_test_one_result == 3){
+            if(access_playlist_test_two_result == 3){
                 cout<<"PASSED: user was printed all playlists"<<endl;
             }
             else{
