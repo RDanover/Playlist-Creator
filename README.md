@@ -21,7 +21,7 @@ Users can also choose to play their entire playlist, shuffle play their playlist
 ## Phase II
 
 ###Class Diagram
-![Screenshot (10)](https://user-images.githubusercontent.com/60625627/142710944-fa7bd646-d6a3-47c5-81bd-b917f0aba7f5.png)
+![Screenshot (12)](https://user-images.githubusercontent.com/60625627/143936351-66a09c81-0aee-4b09-80af-cbb76e6b7e02.png)
 
 ### Description of diagram
 Our project will feature two interfaces, one where the user can see their playlists and choose to delete them or add more, this is also where users will access their playlists. This interface will hold a vector of playable pointers making it a composition of the playable class, a playlist can have one user but a user can have 0 to any positive integer number of playlists. Our second interface will be the playlist interface which will allow users to play the songs in their playlist, delete songs, hide them, or add new ones, they will also be able to view analytics about their listening habits if they choose to have their data collected. This interface will feature two vectors composed of playable object pointers making the playlist class a composition of the playable class. The song class is simply a leaf class and will not be directly accessed by the user. A playlist can have 0 to many songs, however (with our implementation) a song will only belong to one playlist. 
@@ -32,12 +32,12 @@ Our project will feature two interfaces, one where the user can see their playli
 ### Abstract Factory:
  We chose this pattern to solve the ethical issue of collecting data without user consent. We will prompt the user if they would like their data to be collected for use in     displaying their anaylitics. If the user opts out, their data will not be collected and an alternative implementation of playlist and song will be used. By using this     pattern it simplifies and organizes the design by splitting the creation of certain functions based on the user's decision. 
 
- > ## Final deliverable
- > All group members will give a demo to the TA during lab time. The TA will check the demo and the project GitHub repository and ask a few questions to all the team members. 
- > Before the demo, you should do the following:
- > * Complete the sections below (i.e. Screenshots, Installation/Usage, Testing)
- > * Plan one more sprint (that you will not necessarily complete before the end of the quarter). Your In-progress and In-testing columns should be empty (you are not doing more work currently) but your TODO column should have a full sprint plan in it as you have done before. This should include any known bugs (there should be some) or new features you would like to add. These should appear as issues/cards on your Project board.
- > * Make sure your README file and Project board are up-to-date reflecting the current status of your project (e.g. any changes that you have made during the project such as changes to your class diagram). Previous versions should still be visible through your commit history. 
+  ## Final deliverable
+ All group members will give a demo to the TA during lab time. The TA will check the demo and the project GitHub repository and ask a few questions to all the team members. 
+ Before the demo, you should do the following:
+ * Complete the sections below (i.e. Screenshots, Installation/Usage, Testing)
+ * Plan one more sprint (that you will not necessarily complete before the end of the quarter). Your In-progress and In-testing columns should be empty (you are not doing more work currently) but your TODO column should have a full sprint plan in it as you have done before. This should include any known bugs (there should be some) or new features you would like to add. These should appear as issues/cards on your Project board.
+ * Make sure your README file and Project board are up-to-date reflecting the current status of your project (e.g. any changes that you have made during the project such as changes to your class diagram). Previous versions should still be visible through your commit history. 
  
  ## Screenshots
  > Screenshots of the input/output after running your application
