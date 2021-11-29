@@ -473,3 +473,22 @@ int Public_Playlist::shuffle(int tn, int input)//testing purposes only
 //    return;
 return counter;
 }
+
+string Public_Playlist::playSong(string song, string artist) {
+     bool found = false;
+     string test_song;
+     for (unsigned int i = 0; i < songs.size(); i++) {
+           if (songs.at(i)->get_name() == song && songs.at(i)->get_artist() == artist) {
+               found = true;
+              // cout << songs.at(i)->get_name() << " - " << songs.at(i)->get_artist() << " is now playing." << endl;
+               test_song = songs.at(i)->get_name() + " - " + songs.at(i)->get_artist() + " is now playing.";
+               songs.at(i)->increment_time_played();
+               return test_song;
+           }
+       }
+       if (!found) {
+          test_song = "Song is not found in current playlist.";
+          return test_song;
+
+       }
+}

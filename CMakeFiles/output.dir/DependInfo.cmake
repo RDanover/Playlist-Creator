@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/src/Private_Playlist.cpp" "/home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles/output.dir/src/Private_Playlist.cpp.o"
-  "/home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/src/Private_Song.cpp" "/home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles/output.dir/src/Private_Song.cpp.o"
-  "/home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/src/Public_Playlist.cpp" "/home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles/output.dir/src/Public_Playlist.cpp.o"
-  "/home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/src/Public_Song.cpp" "/home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles/output.dir/src/Public_Song.cpp.o"
-  "/home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/src/User_Menu.cpp" "/home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles/output.dir/src/User_Menu.cpp.o"
-  "/home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/src/main.cpp" "/home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles/output.dir/src/main.cpp.o"
+  "/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/Private_Playlist.cpp" "/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles/output.dir/src/Private_Playlist.cpp.o"
+  "/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/Private_Song.cpp" "/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles/output.dir/src/Private_Song.cpp.o"
+  "/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/Public_Playlist.cpp" "/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles/output.dir/src/Public_Playlist.cpp.o"
+  "/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/Public_Song.cpp" "/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles/output.dir/src/Public_Song.cpp.o"
+  "/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/User_Menu.cpp" "/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles/output.dir/src/User_Menu.cpp.o"
+  "/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/main.cpp" "/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles/output.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
