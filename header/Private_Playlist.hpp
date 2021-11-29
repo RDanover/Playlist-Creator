@@ -1,13 +1,13 @@
-#ifndef PLAYLIST_HPP
-#define PLAYLIST_HPP
-#include "Playable.hpp"
+#ifndef PRIVATE_PLAYLIST_HPP
+#define PRIVATE_PLAYLIST_HPP
+#include "abs_playlist.hpp"
 #include <vector>
 #include <string>
-#include "Song.hpp"
+#include "Private_Song.hpp"
 
 using namespace std;
 
-class Playlist : public Playable
+class Private_Playlist : public Abs_Playlist
 {
 private:
 	vector<Playable *> songs;
@@ -16,7 +16,7 @@ private:
 	double length;
 
 public:
-	Playlist(string);
+	Private_Playlist(string);
 	string get_name() { return name; }
 	double get_length() { return length; }
 	void display();
@@ -29,10 +29,10 @@ public:
 	void play();
 	void play_song(string song, string artist);
 	void shuffle();
-	void analytics();
 	void display_songs();
 	bool song_exists(Playable *curr);
+	void deleteP(); // helper function for delete  playlist
+  	//void add_song(string name, string artist, double length);
 };
 
 #endif // PLAYLIST_HPP
-

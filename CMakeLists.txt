@@ -7,8 +7,10 @@ ADD_SUBDIRECTORY(googletest)
 ADD_EXECUTABLE(output
     src/main.cpp
     src/User_Menu.cpp
-    src/Playlist.cpp
-    src/Song.cpp
+    src/Public_Playlist.cpp
+    src/Private_Playlist.cpp
+    src/Public_Song.cpp
+    src/Private_Song.cpp
 )
 
 

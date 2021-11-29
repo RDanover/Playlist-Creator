@@ -11,8 +11,30 @@ int main()
 	cout << "You will then be able to \"listen\" to these songs along with various other features."<<endl<<endl<<endl;
 
 	User_Menu* menu = new User_Menu();
+	string input = "";
+	while(input.compare("NO")!=0&&input.compare("YES")!=0){
+
+		cout<<"This program has the option of viewing your listening analytics. ";
+		cout<< "To do this we will record the amount of times you listen to a song. ";
+		cout<< "If you would like to opt out of this feature and not have your listening behavior tracked, Please enter NO, otherwise enter YES."<<endl;
+	
+		getline(cin,input);
+		cout<<endl;
+		
+		if(input.compare("NO")!=0&&input.compare("YES")!=0){
+			cout<<"INVALID INPUT. Please try again."<<endl;
+		}
+	}
+	if(input.compare("NO")==0){
+		cout<<"you have chosen private playlist"<<endl;
+		menu->display_options(0);	
+	}
+	else{
+		cout<<"you have chosen public playlist"<<endl;
+		menu->display_options(1);
+	}
 	//menu->create_new_playlist();
-	menu->display_options();
+	//menu->display_options();
 // 	Playlist* playlist = new Playlist("PlayLists");
 //  	Playlist* playlist_2 = new Playlist("Playlists2");
 	
