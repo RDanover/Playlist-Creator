@@ -42,7 +42,7 @@ Our project will feature two interfaces, one where the user can see their playli
  ## Screenshots
  > Screenshots of the input/output after running your application
  ## Installation/Usage
- To use our project click the code button and copy the url, you can then clone the repository into an IDE of your choosing. If you are using hammer use the command "git clone --recursive <githuburl>". Once you have a copy, enter into the directory and type "cmake3 ." followed by "make" then to run the program type "./output". To interact with the program type your responses into the keyboard and hit the enter key when you have finished typing your response. Please enjoy our playlist program. 
+ To use our project click the code button and copy the url, you can then clone the repository into an IDE of your choosing. If you are using hammer use the command "git clone --recursive \<githuburl\>". Once you have a copy, enter into the directory and type "cmake3 ." followed by "make" then to run the program type "./output". To interact with the program type your responses into the keyboard and hit the enter key when you have finished typing your response. Please enjoy our playlist program. 
  
  ## Testing
 Our program was tested via a test.cpp file which contained a second main function containing various tests for all of our functions. For some functions, special test functions were made to avoid having to ask for input while running tests. 
