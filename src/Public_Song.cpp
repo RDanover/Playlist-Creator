@@ -1,6 +1,6 @@
-#include "../header/Song.hpp"
+#include "../header/Public_Song.hpp"
 
-Song::Song(string n, string a, double l){
+Public_Song::Public_Song(string n, string a, double l){
         name = n;
         artist = a;
         length = l;
@@ -8,7 +8,7 @@ Song::Song(string n, string a, double l){
         num_time_played = 0;
 }
 
-void Song::set_hidden_status(){
+void Public_Song::set_hidden_status(){
         if(hidden){
                 hidden = false;
         }
