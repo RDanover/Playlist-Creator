@@ -425,3 +425,51 @@ int Public_Playlist::hide_unhide_song(int tn, string input)//testing purposes on
       }
    }
 }
+
+int Public_Playlist::shuffle(int tn, int input)//testing purposes only
+{
+   if (songs.size() < 1)
+   {
+//       cout << "Please add songs before trying to shuffle the plaaylist" << endl;
+//       return;
+	 return 1;
+   }
+
+   shuffled_songs = songs;
+
+//    vector<Playable *> temp;
+//    temp = songs;
+
+//    vector<Playable *>::iterator ptr;
+
+//    srand(time(NULL)); // setting the seed based on the current time
+
+//    int randInt = 0;
+      int counter = 0;
+
+   for (int i = 0; i < songs.size(); i++)
+   { 
+//       randInt = rand() % (temp.size());
+//       ptr = temp.begin();
+//       shuffled_songs.at(i) = temp.at(randInt);
+//       ptr += randInt;
+//       temp.erase(ptr);
+	   counter+=1;
+   }
+   if(tn==2){
+	   return counter;
+   }
+	counter=0;
+//    cout << "Songs have been shuffled, now playing playlist" << endl;
+   for (int i = 0; i < shuffled_songs.size(); i++)
+   {
+//       if (!shuffled_songs.at(i)->get_hidden_status())
+//       {
+//          cout << "Playing: " << shuffled_songs.at(i)->get_name() << " by: " << shuffled_songs.at(i)->get_artist() << " for " << shuffled_songs.at(i)->get_length() << " minutes." << endl;
+//          shuffled_songs.at(i)->increment_time_played(); // will need to be removed for the private playlist
+//       }
+	  counter+=1;
+   }
+//    return;
+return counter;
+}
