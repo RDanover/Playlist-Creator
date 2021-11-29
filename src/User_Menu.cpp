@@ -267,6 +267,8 @@ int User_Menu::access_playlist(){
 		//cout<<"Please add a playlist before attempting to access a playlist."<<endl;
 		return 1;//playlist is empty
 	}
+	
+	return -1;
 	//list playlists starting with a number to index them
 // 	for( unsigned i = 0 ; i < user_playables.size(); i++ ){
 // 		cout << i+1 << ". " << user_playables.at(i)->get_name() << endl;
