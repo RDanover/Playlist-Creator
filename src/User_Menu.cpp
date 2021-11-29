@@ -262,7 +262,7 @@ void User_Menu::private_add_playlist()
 }
 
 //USED FOR TESTING PURPOSES ONLY
-int User_Menu::access_playlist(int tn){
+int User_Menu::access_playlist(int tn, int input){
 	if(user_playables.size()==0){
 		//cout<<"Please add a playlist before attempting to access a playlist."<<endl;
 		//return
@@ -286,10 +286,12 @@ int User_Menu::access_playlist(int tn){
 // 	cin >> input;	
 // 	cin.ignore();//clears the newline left in th stream incase getline is used after this
 // 	//check input then send user to the correct playlist
-// 	if( input < 0 || input > user_playables.size()){
-// 		cout << "Invalid input please try again"<<endl;
-// 		public_access_playlist();
-// 	}
+	
+	if( input < 0 || input > user_playables.size()){
+		return 3;
+		//cout << "Invalid input please try again"<<endl;
+		//public_access_playlist();
+	}
 // 	else if( input == 0){
 // 		return;
 // 	}
