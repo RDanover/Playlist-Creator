@@ -33,13 +33,8 @@ Our project will feature two interfaces, one where the user can see their playli
  We chose this pattern to solve the ethical issue of collecting data without user consent. We will prompt the user if they would like their data to be collected for use in     displaying their anaylitics. If the user opts out, their data will not be collected and an alternative implementation of playlist and song will be used. By using this     pattern it simplifies and organizes the design by splitting the creation of certain functions based on the user's decision. 
 
   ## Final deliverable
- All group members will give a demo to the TA during lab time. The TA will check the demo and the project GitHub repository and ask a few questions to all the team members. 
- Before the demo, you should do the following:
- * Complete the sections below (i.e. Screenshots, Installation/Usage, Testing)
- * Plan one more sprint (that you will not necessarily complete before the end of the quarter). Your In-progress and In-testing columns should be empty (you are not doing more work currently) but your TODO column should have a full sprint plan in it as you have done before. This should include any known bugs (there should be some) or new features you would like to add. These should appear as issues/cards on your Project board.
- * Make sure your README file and Project board are up-to-date reflecting the current status of your project (e.g. any changes that you have made during the project such as changes to your class diagram). Previous versions should still be visible through your commit history. 
  
- ## Screenshots
+ ### Screenshots
 ![Screenshot (15)](https://user-images.githubusercontent.com/60625627/143954518-ba1769fb-6c06-4165-b643-777822f4ba1f.png)
 ![Screenshot (16)](https://user-images.githubusercontent.com/60625627/143954527-bbcb9780-c178-4a7b-89dd-e1d8826af0a4.png)
 ![Screenshot (17)](https://user-images.githubusercontent.com/60625627/143954540-8df6265d-2843-4bb0-9af9-4a062b49f81c.png)
@@ -47,10 +42,10 @@ Our project will feature two interfaces, one where the user can see their playli
 ![Screenshot (19)](https://user-images.githubusercontent.com/60625627/143954565-4c1da6a2-cce3-4c45-ad8d-8145e05bd0ca.png)
 ![Screenshot (20)](https://user-images.githubusercontent.com/60625627/143954578-ce420dff-3015-4640-b157-3b64a6349d48.png)
 
- ## Installation/Usage
+ ### Installation/Usage
  To use our project click the code button and copy the url, you can then clone the repository into an IDE of your choosing. If you are using hammer use the command "git clone --recursive \<githuburl\>". Once you have a copy, enter into the directory and type "cmake3 ." followed by "make" then to run the program type "./output". To interact with the program type your responses into the keyboard and hit the enter key when you have finished typing your response. Please enjoy our playlist program. 
  
- ## Testing
+ ### Testing
 Our program was tested via a test.cpp file which contained a second main function containing various tests for all of our functions. For some functions, special test functions were made to avoid having to ask for input while running tests. 
 ![Screenshot (13)](https://user-images.githubusercontent.com/60625627/143936770-b34a860a-dde6-464d-badd-4165732d751e.png)
 ![Screenshot (14)](https://user-images.githubusercontent.com/60625627/143936785-4747510f-c185-406e-af4b-4c0d184a4b12.png)
