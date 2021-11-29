@@ -144,7 +144,7 @@ int main()
             Public_Playlist* Hide_Unhide_test_three = new Public_Playlist("n");
             int Hide_Unhide_test_three_result = Hide_Unhide_test_three->hide_unhide_song(3,"");
             cout<<"Test Result: ";
-            if( Hide_Unhide_test_three_resul == 3){
+            if( Hide_Unhide_test_three_result == 3){
                 cout<<"PASSED: song was hidden or unhidden based on its previous status and user was sent to the menu"<<endl;
             }
             else{
