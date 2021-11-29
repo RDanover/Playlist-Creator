@@ -273,8 +273,8 @@ int User_Menu::access_playlist(int tn, int input){
 	//list playlists starting with a number to index them
 	int sum = 0;
 	for( unsigned i = 0 ; i < user_playables.size(); i++ ){
-		sum+=1;
 		//cout << i+1 << ". " << user_playables.at(i)->get_name() << endl;
+		sum+=1;
         }
 	if(tn ==2){
 		return sum;
@@ -288,9 +288,10 @@ int User_Menu::access_playlist(int tn, int input){
 // 	//check input then send user to the correct playlist
 	
 	if( input < 0 || input > user_playables.size()){
-		return 3;
+		
 		//cout << "Invalid input please try again"<<endl;
 		//public_access_playlist();
+		return 3;
 	}
 // 	else if( input == 0){
 // 		return;
