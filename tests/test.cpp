@@ -16,7 +16,7 @@ int main()
             cout<<"Test one: No playlists have been added"<<endl;
             User_Menu* access_playlist_test_one = new User_Menu();
             int access_playlist_test_one_result = access_playlist_test_one.access_playlist();
-            cout<<"Test Result: <<;
+            cout<<"Test Result: <<";
             if(access_playlist_test_one_result == 1){
                 cout<<"PASSED: user was printed error message and was returned to options"<<endl;
             }
