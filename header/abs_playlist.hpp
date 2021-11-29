@@ -26,3 +26,4 @@ public:
 };
 
 #endif // ABS_PLAYLIST_HPP
+

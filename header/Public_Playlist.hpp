@@ -36,3 +36,4 @@ public:
 };
 
 #endif // PUBLIC_PLAYLIST_HPP
+

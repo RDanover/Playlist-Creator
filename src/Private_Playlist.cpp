@@ -318,3 +318,4 @@ void Private_Playlist::shuffle()
    }
    return;
 }
+
