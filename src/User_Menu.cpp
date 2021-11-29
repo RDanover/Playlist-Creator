@@ -300,6 +300,6 @@ int User_Menu::access_playlist(int tn){
 }
 void User_Menu::add_playlist()//testing purposes only
 {	
-	Public_Playlist* new_playlist = new Public_Playlist();
+	Public_Playlist* new_playlist = new Public_Playlist("name");
 	user_playables.push_back(new_playlist);
 }
