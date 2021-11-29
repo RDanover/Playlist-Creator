@@ -298,3 +298,8 @@ int User_Menu::access_playlist(int tn){
 // 	}
 	return -1;
 }
+void User_Menu::add_playlist()//testing purposes only
+{	
+	Public_Playlist* new_playlist = new Public_Playlist();
+	user_playables.push_back(new_playlist);
+}
