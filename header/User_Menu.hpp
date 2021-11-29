@@ -17,6 +17,7 @@ private:
 	vector<Playable *> user_playables;
 
 public:
+	~User_Menu();
 	void display_options(int);
 	void public_add_playlist();
 	Public_Playlist* public_create_new_playlist();
