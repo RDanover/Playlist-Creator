@@ -260,3 +260,33 @@ void User_Menu::private_add_playlist()
 	}
 	
 }
+
+//USED FOR TESTING PURPOSES ONLY
+int User_Menu::access_playlist(){
+	if(user_playables.size()==0){
+		//cout<<"Please add a playlist before attempting to access a playlist."<<endl;
+		return 1;//playlist is empty
+	}
+	//list playlists starting with a number to index them
+// 	for( unsigned i = 0 ; i < user_playables.size(); i++ ){
+// 		cout << i+1 << ". " << user_playables.at(i)->get_name() << endl;
+//         }
+
+// 	//ask for user input
+// 	int input = 0;
+// 	cout << "Please type the number next to the playlist you would like to access and hit enter, or to return to options press 0 and hit enter" << endl;
+// 	cin >> input;	
+// 	cin.ignore();//clears the newline left in th stream incase getline is used after this
+// 	//check input then send user to the correct playlist
+// 	if( input < 0 || input > user_playables.size()){
+// 		cout << "Invalid input please try again"<<endl;
+// 		public_access_playlist();
+// 	}
+// 	else if( input == 0){
+// 		return;
+// 	}
+// 	else{
+// 		user_playables.at(input-1)->display();
+// 	}
+
+}
