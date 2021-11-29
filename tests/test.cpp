@@ -166,7 +166,7 @@ int main()
             //Shuffle Test One
             cout<<"Test one: if playlist is empty"<<endl;
             Public_Playlist* Shuffle_test_one = new Public_Playlist("n");
-            int Shuffle_test_one_result = Shuffle_test_one->Shuffle(1,0);
+            int Shuffle_test_one_result = Shuffle_test_one->shuffle(1,0);
             cout<<"Test Result: ";
             if( Shuffle_test_one_result == 1){
                 cout<<"PASSED: user was told to add songs before shuffling playlist and was returned to menu"<<endl;
@@ -184,7 +184,7 @@ int main()
             for(int Shuffle_test_two_num_i=0;Shuffle_test_two_num_i<Shuffle_test_two_num;Shuffle_test_two_num_i++){
                 Shuffle_test_two->add_song("n","a",0);
             }
-            int Shuffle_test_two_result = Shuffle_test_two->Shuffle(2,0);
+            int Shuffle_test_two_result = Shuffle_test_two->shuffle(2,0);
             cout<<"Test Result: ";
             if( Shuffle_test_two_result == Shuffle_test_two_num){
                 cout<<"PASSED: all songs in the playlist were shuffled"<<endl;
@@ -202,7 +202,7 @@ int main()
             for(int Shuffle_test_three_num_i=0;Shuffle_test_three_num_i<Shuffle_test_three_num;Shuffle_test_three_num_i++){
                 Shuffle_test_three->add_song("n","a",0);
             }
-            int Shuffle_test_three_result = Shuffle_test_three->Shuffle(2,0);
+            int Shuffle_test_three_result = Shuffle_test_three->shuffle(2,0);
             cout<<"Test Result: ";
             if( Shuffle_test_three_result == Shuffle_test_three_num){
                 cout<<"PASSED: all songs in the shuffled playlist were played"<<endl;
