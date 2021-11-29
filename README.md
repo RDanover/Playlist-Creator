@@ -46,4 +46,8 @@ Our project will feature two interfaces, one where the user can see their playli
  
  ## Testing
 Our program was tested via a test.cpp file which contained a second main function containing various tests for all of our functions. For some functions, special test functions were made to avoid having to ask for input while running tests. 
+![Screenshot (13)](https://user-images.githubusercontent.com/60625627/143936770-b34a860a-dde6-464d-badd-4165732d751e.png)
+![Screenshot (14)](https://user-images.githubusercontent.com/60625627/143936785-4747510f-c185-406e-af4b-4c0d184a4b12.png)
+
+
  
