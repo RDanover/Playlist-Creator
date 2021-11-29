@@ -262,17 +262,23 @@ void User_Menu::private_add_playlist()
 }
 
 //USED FOR TESTING PURPOSES ONLY
-int User_Menu::access_playlist(){
+int User_Menu::access_playlist(int tn){
 	if(user_playables.size()==0){
 		//cout<<"Please add a playlist before attempting to access a playlist."<<endl;
-		return 1;//playlist is empty
+		//return
+		return 1;
 	}
 	
-	return -1;
+	
 	//list playlists starting with a number to index them
-// 	for( unsigned i = 0 ; i < user_playables.size(); i++ ){
-// 		cout << i+1 << ". " << user_playables.at(i)->get_name() << endl;
-//         }
+	int sum = 0;
+	for( unsigned i = 0 ; i < user_playables.size(); i++ ){
+		sum+=1;
+		//cout << i+1 << ". " << user_playables.at(i)->get_name() << endl;
+        }
+	if(tn ==2){
+		return sum;
+	}
 
 // 	//ask for user input
 // 	int input = 0;
@@ -290,5 +296,5 @@ int User_Menu::access_playlist(){
 // 	else{
 // 		user_playables.at(input-1)->display();
 // 	}
-
+	return -1;
 }
