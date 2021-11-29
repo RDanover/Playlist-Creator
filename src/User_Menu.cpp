@@ -111,7 +111,7 @@ void User_Menu::public_delete_playlist(){
 	}
 	
 	else{
-		string n = user_playables.at(input-1)->get_name();=
+		string n = user_playables.at(input-1)->get_name();
 		user_playables.at(input-1)->deleteP();
 		user_playables.erase(user_playables.begin()+input-1);
 		cout << n << " was deleted" << endl; 
