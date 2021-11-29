@@ -251,36 +251,28 @@ void Public_Playlist::hide_unhide_song()
 }
 
 void Public_Playlist::play(){
-	
+//bug:should check if song is hidden before playing
 	if (songs.size() == 0){
   		std::cout << "Please add songs to play" << endl;
+  		display();
 		return;
 	}
 
 	if(songs.size() > 0){
-		if (!songs.at(0)->get_hidden_status())
-      		{
-        		std::cout << "Now playing: " << songs.at(0)->get_name() << ", by " << songs.at(0)->get_artist() << endl;
-  			songs.at(0)->increment_time_played();
-      		}
-
+  		std::cout << "Now playing: " << songs.at(0)->get_name() << ", by " << songs.at(0)->get_artist() << endl;
+  		songs.at(0)->increment_time_played();
 	}
 	
+
 	 if(songs.size() > 1){
 	  std::cout << "Upcoming songs: " << endl; 
 		for( unsigned int i = 1; i < songs.size(); i++){
-			if (!songs.at(i)->get_hidden_status())
-      			{
-         			std::cout << songs.at(i)->get_name() << ", by " << songs.at(i)->get_artist() << endl;
-				songs.at(i)->increment_time_played();
-
-      			}
-			
-		}
+		    std::cout << songs.at(i)->get_name() << ", by " << songs.at(i)->get_artist() << endl;
+			  songs.at(i)->increment_time_played();
+      }
 	}
-
-	
 }
+
 void Public_Playlist::play_song(string song, string artist){
      bool found = false;
      for (unsigned int i = 0; i < songs.size(); i++) {
@@ -377,4 +369,9 @@ void Public_Playlist::analytics(){
 	
 	std::cout << "You spent " << sum<< " minutes listening to this playlist." << endl;
 	
+}
+
+void Public_Playlist::deleteP(){//helper function
+	for(unsigned int i = 0; i < songs.size(); i++) 
+	    songs.erase(songs.begin()+i);
 }

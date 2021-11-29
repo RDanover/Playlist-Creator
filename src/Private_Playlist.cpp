@@ -11,7 +11,10 @@ Private_Playlist::Private_Playlist(string n)
 {
    name = n;
 }
-
+void Private_Playlist::deleteP(){//helper function
+	for(unsigned int i = 0; i < songs.size(); i++) 
+	    songs.erase(songs.begin()+i);
+}
 void Private_Playlist::display()
 {
    std::string option = "B";
@@ -241,34 +244,28 @@ void Private_Playlist::hide_unhide_song()
 }
 
 void Private_Playlist::play(){
-	
+//bug:should check if song is hidden before playing
 	if (songs.size() == 0){
   		std::cout << "Please add songs to play" << endl;
+  		display();
 		return;
 	}
 
 	if(songs.size() > 0){
-		if (!songs.at(0)->get_hidden_status())
-      		{
-        		std::cout << "Now playing: " << songs.at(0)->get_name() << ", by " << songs.at(0)->get_artist() << endl;;
-      		}
-
+  		std::cout << "Now playing: " << songs.at(0)->get_name() << ", by " << songs.at(0)->get_artist() << endl;
+  		songs.at(0)->increment_time_played();
 	}
 	
+
 	 if(songs.size() > 1){
 	  std::cout << "Upcoming songs: " << endl; 
 		for( unsigned int i = 1; i < songs.size(); i++){
-			if (!songs.at(i)->get_hidden_status())
-      			{
-         			std::cout << songs.at(i)->get_name() << ", by " << songs.at(i)->get_artist() << endl;
-
-      			}
-			
-		}
+		    std::cout << songs.at(i)->get_name() << ", by " << songs.at(i)->get_artist() << endl;
+			  songs.at(i)->increment_time_played();
+      }
 	}
-
-	
 }
+
 void Private_Playlist::play_song(string song, string artist){
      bool found = false;
      for (unsigned int i = 0; i < songs.size(); i++) {

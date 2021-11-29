@@ -21,6 +21,7 @@ public:
     virtual void shuffle() {}
     virtual void analytics() {}
     virtual void display_songs() {}
+    virtual void deleteP(){}
 
     virtual string get_artist() {}
     virtual bool get_hidden_status() {}

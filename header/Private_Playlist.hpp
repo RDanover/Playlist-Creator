@@ -31,6 +31,8 @@ public:
 	void shuffle();
 	void display_songs();
 	bool song_exists(Playable *curr);
+	void deleteP(); // helper function for delete  playlist
+  	//void add_song(string name, string artist, double length);
 };
 
 #endif // PLAYLIST_HPP

@@ -32,6 +32,7 @@ public:
 	void analytics();
 	void display_songs();
 	bool song_exists(Playable *curr);
+	void deleteP(); // helper function for delete  playlist
 };
 
 #endif // PUBLIC_PLAYLIST_HPP
