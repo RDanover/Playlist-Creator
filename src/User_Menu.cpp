@@ -2,15 +2,13 @@
 #include <iostream>
 
 User_Menu::~User_Menu(){
-	if(user_playables.size()==0){
-		user_playables.clear();
-	}
-	else{
+	if(user_playables.size()!=0){
 		
 		for(int i=0;i<user_playables.size();i++){
 			user_playables.at(i)->deleteP();
 		}
 		user_playables.clear();
+		
 	}
 }
 
