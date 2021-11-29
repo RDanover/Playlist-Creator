@@ -1,30 +1,26 @@
-#ifndef SONG_HPP
-#define SONG_HPP
+#ifndef PRIVATE_SONG_HPP
+#define PRIVATE_SONG_HPP
 
-#include "Playable.hpp"
+#include "abs_song.hpp"
 #include <string>
 
 using namespace std;
 
-class Song : public Playable
+class Private_Song : public Abs_Song
 {
 private:
 	string name;
 	string artist;
 	double length;
 	bool hidden;
-	int num_time_played;
-
+	
 public:
-	Song(string, string, double);
+	Private_Song(string, string, double);
 	string get_name() { return name; }
 	string get_artist() { return artist; }
 	double get_length() { return length; }
 	bool get_hidden_status() { return hidden; }
-	int get_num_time_played() { return num_time_played; }
 	void set_hidden_status();
-	void increment_time_played() { num_time_played++; }
-};
+	};
 
-#endif // SONG_HPP
-
+#endif // PRIVATE_SONG_HPP
