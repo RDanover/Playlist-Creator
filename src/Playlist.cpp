@@ -1,18 +1,18 @@
-#include "../header/Playlist.hpp"
+#include "../header/Public_Playlist.hpp"
 #include <stdlib.h>
 #include <time.h>
 #include <iterator>
-#include "../header/Song.hpp"
+#include "../header/Public_Song.hpp"
 #include <iostream>
 
 using namespace std;
 
-Playlist::Playlist(string n)
+Public_Playlist::Public_Playlist(string n)
 {
    name = n;
 }
 
-void Playlist::display()
+void Public_Playlist::display()
 {
    std::string option = "B";
    while (option != "E")
@@ -39,16 +39,16 @@ void Playlist::display()
       std::cout << "ENTER OPTION:" << endl;
 
       std::cin >> option;
-
+      cin.ignore();
+	   
       if (option == "AS")
       {
          std::string name;
          std::string artist;
          double length;
-         Song *temp = nullptr;
+         Public_Song *temp = nullptr;
          char duplicate;
          std::cout << endl;
-         std::cin.ignore();
          cout << "Enter song name:" << endl;
          std::getline(std::cin, name);
          cout << endl;
@@ -57,25 +57,28 @@ void Playlist::display()
          cout << endl;
          cout << "Enter song length (in minutes):" << endl;
          cin >> length;
+	 cin.ignore();
          cout << endl;
-         temp = new Song(name, artist, length);
+         temp = new Public_Song(name, artist, length);
 
          if (song_exists(temp))
          {
             cout << "Add song again? - Song already exists in playlist" << endl;
             cout << "Enter (y/n):" << endl;
             cin >> duplicate;
+	    cin.ignore();
+		 
             cout << endl;
             if (duplicate == 'y')
             {
-               Playable *new_song = new Song(name, artist, length);
+               Playable *new_song = new Public_Song(name, artist, length);
                add_song(new_song);
                delete temp;
             }
          }
          else
          {
-            Playable *new_song = new Song(name, artist, length);
+            Playable *new_song = new Public_Song(name, artist, length);
             add_song(new_song);
          }
       }
@@ -102,7 +105,6 @@ void Playlist::display()
          cout << endl;
 	 string s;
 	 string a;
-	 cin.ignore();
 	 cout << "Enter song name:" << endl;
          std::getline(std::cin, s);
          cout << endl;
@@ -129,7 +131,7 @@ void Playlist::display()
    }
 }
 
-bool Playlist::song_exists(Playable *curr)
+bool Public_Playlist::song_exists(Playable *curr)
 {
    for (unsigned int i = 0; i < songs.size(); i++)
    {
@@ -141,7 +143,7 @@ bool Playlist::song_exists(Playable *curr)
    return false;
 }
 
-void Playlist::display_songs()
+void Public_Playlist::display_songs()
 {
    for (unsigned int i = 0; i < songs.size(); i++)
    {
@@ -150,18 +152,18 @@ void Playlist::display_songs()
    cout << endl;
 }
 
-void Playlist::add_song(string name, string artist, double length){
- 	Song* temp = new Song(name, artist, length);
+void Public_Playlist::add_song(string name, string artist, double length){
+ 	Public_Song* temp = new Public_Song(name, artist, length);
     songs.push_back(temp);
 }
 
 
-void Playlist::add_song(Playable *song)
+void Public_Playlist::add_song(Playable *song)
 {
    songs.push_back(song);
 }
 
-void Playlist::delete_song()
+void Public_Playlist::delete_song()
 {
    int input;
    string title;
@@ -169,10 +171,11 @@ void Playlist::delete_song()
    cout << "Enter 1 if you want to delete a song by titles" << endl;
    cout << "Enter 2 if you want to delete a song by order" << endl;
    cin >> input;
+   cin.ignore();
+	
    if(input == 1)
    {
 	cout << "Enter title: ";
-	cin.ignore();
         getline(cin, title);
 	for(int i = 0; i < songs.size(); i++) {
 	    if(songs.at(i)->get_name() == title) {
@@ -186,6 +189,7 @@ void Playlist::delete_song()
    {
 	cout << "Enter the order: ";
 	cin >> order;
+	cin.ignore();
 	if(order < 1 || order > songs.size()){
 	    cout << "Invalid order" << endl;
 	    return;
@@ -203,9 +207,8 @@ void Playlist::delete_song()
    
 }
 
-void Playlist::hide_unhide_song()
+void Public_Playlist::hide_unhide_song()
 {
-   cin.ignore();
    string songname = "";
    int indexOfSong = -1;
    cout << "Please enter the name of the song you would like to hide or unhide, or enter LEAVE, to return to the main menu." << endl;
@@ -213,7 +216,6 @@ void Playlist::hide_unhide_song()
    cout << endl;
    if (songname.compare("LEAVE") == 0)
    {
-      // display_options();
       return;
    }
    else
@@ -236,24 +238,19 @@ void Playlist::hide_unhide_song()
          if (songs.at(indexOfSong)->get_hidden_status())
          {
             songs.at(indexOfSong)->set_hidden_status();
-            cout << songs.at(indexOfSong)->get_name() << " Has been unhidden." << endl;
+            cout << songs.at(indexOfSong)->get_name() << " has been unhidden." << endl;
          }
          else
          {
             songs.at(indexOfSong)->set_hidden_status();
-            cout << songs.at(indexOfSong)->get_name() << " Has been hidden." << endl;
+            cout << songs.at(indexOfSong)->get_name() << " has been hidden." << endl;
          }
          return;
       }
    }
 }
 
-void Playlist::deleteP(){//helper function
-	for(unsigned int i = 0; i < songs.size(); i++) 
-	    songs.erase(songs.begin()+i);
-}
-
-void Playlist::play(){
+void Public_Playlist::play(){
 //bug:should check if song is hidden before playing
 	if (songs.size() == 0){
   		std::cout << "Please add songs to play" << endl;
@@ -276,7 +273,7 @@ void Playlist::play(){
 	}
 }
 
-void Playlist::play_song(string song, string artist){
+void Public_Playlist::play_song(string song, string artist){
      bool found = false;
      for (unsigned int i = 0; i < songs.size(); i++) {
            if (songs.at(i)->get_name() == song && songs.at(i)->get_artist() == artist) {
@@ -291,7 +288,7 @@ void Playlist::play_song(string song, string artist){
 	
 }
 
-void Playlist::shuffle()
+void Public_Playlist::shuffle()
 {
    if (songs.size() < 1)
    {
@@ -331,9 +328,13 @@ void Playlist::shuffle()
    return;
 }
 
-void Playlist::analytics(){
-//bugs: the sum function isnt working as expected
-// : throws error if playlist is empty, check if playlist is empty before running through
+void Public_Playlist::analytics(){
+
+	if(songs.size()==0){//checks if playlist is empty before performing analytics
+		cout<<"Please add songs before retrieving analytics."<<endl;
+		return;
+	}
+	
 	vector<int> v;
 	int max = songs.at(0)->get_num_time_played();
 	
@@ -366,13 +367,11 @@ void Playlist::analytics(){
 		sum += songs.at(i)->get_num_time_played() * songs.at(i)->get_length(); 
 	}
 	
-	if (sum%60 == 0)
-	std::cout << "You spent " << sum/60 << " minutes listening to this playlist." << endl;
+	std::cout << "You spent " << sum<< " minutes listening to this playlist." << endl;
 	
-	else
-	std::cout << "You spent " << sum/60 << " minutes and " << sum%60 << " seconds listening to this playlist." << endl;
 }
 
-	// insert implementation
-// shuffled_songs = temp;
-
+void Public_Playlist::deleteP(){//helper function
+	for(unsigned int i = 0; i < songs.size(); i++) 
+	    songs.erase(songs.begin()+i);
+}
