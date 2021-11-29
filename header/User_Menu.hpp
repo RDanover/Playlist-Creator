@@ -29,7 +29,7 @@ public:
 	void private_delete_playlist();
 	void private_access_playlist();
 	
-	int access_playlist(int); //testing purposes only
+	int access_playlist(int,int); //testing purposes only
 	void add_playlist(); //testing purposes only
 };
 
