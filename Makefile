@@ -68,10 +68,10 @@ RM = /usr/bin/cmake3 -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002
+CMAKE_SOURCE_DIR = /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002
+CMAKE_BINARY_DIR = /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -146,9 +146,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles /home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -188,6 +188,19 @@ output: cmake_check_build_system
 output/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/build
 .PHONY : output/fast
+
+#=============================================================================
+# Target rules for targets named test
+
+# Build rule for target.
+test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test
+.PHONY : test
+
+# fast build rule for target.
+test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
+.PHONY : test/fast
 
 #=============================================================================
 # Target rules for targets named gmock_main
@@ -248,6 +261,7 @@ src/Private_Playlist.o: src/Private_Playlist.cpp.o
 # target to build an object file
 src/Private_Playlist.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/src/Private_Playlist.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Private_Playlist.cpp.o
 .PHONY : src/Private_Playlist.cpp.o
 
 src/Private_Playlist.i: src/Private_Playlist.cpp.i
@@ -257,6 +271,7 @@ src/Private_Playlist.i: src/Private_Playlist.cpp.i
 # target to preprocess a source file
 src/Private_Playlist.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/src/Private_Playlist.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Private_Playlist.cpp.i
 .PHONY : src/Private_Playlist.cpp.i
 
 src/Private_Playlist.s: src/Private_Playlist.cpp.s
@@ -266,6 +281,7 @@ src/Private_Playlist.s: src/Private_Playlist.cpp.s
 # target to generate assembly for a file
 src/Private_Playlist.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/src/Private_Playlist.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Private_Playlist.cpp.s
 .PHONY : src/Private_Playlist.cpp.s
 
 src/Private_Song.o: src/Private_Song.cpp.o
@@ -275,6 +291,7 @@ src/Private_Song.o: src/Private_Song.cpp.o
 # target to build an object file
 src/Private_Song.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/src/Private_Song.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Private_Song.cpp.o
 .PHONY : src/Private_Song.cpp.o
 
 src/Private_Song.i: src/Private_Song.cpp.i
@@ -284,6 +301,7 @@ src/Private_Song.i: src/Private_Song.cpp.i
 # target to preprocess a source file
 src/Private_Song.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/src/Private_Song.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Private_Song.cpp.i
 .PHONY : src/Private_Song.cpp.i
 
 src/Private_Song.s: src/Private_Song.cpp.s
@@ -293,6 +311,7 @@ src/Private_Song.s: src/Private_Song.cpp.s
 # target to generate assembly for a file
 src/Private_Song.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/src/Private_Song.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Private_Song.cpp.s
 .PHONY : src/Private_Song.cpp.s
 
 src/Public_Playlist.o: src/Public_Playlist.cpp.o
@@ -302,6 +321,7 @@ src/Public_Playlist.o: src/Public_Playlist.cpp.o
 # target to build an object file
 src/Public_Playlist.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/src/Public_Playlist.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Public_Playlist.cpp.o
 .PHONY : src/Public_Playlist.cpp.o
 
 src/Public_Playlist.i: src/Public_Playlist.cpp.i
@@ -311,6 +331,7 @@ src/Public_Playlist.i: src/Public_Playlist.cpp.i
 # target to preprocess a source file
 src/Public_Playlist.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/src/Public_Playlist.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Public_Playlist.cpp.i
 .PHONY : src/Public_Playlist.cpp.i
 
 src/Public_Playlist.s: src/Public_Playlist.cpp.s
@@ -320,6 +341,7 @@ src/Public_Playlist.s: src/Public_Playlist.cpp.s
 # target to generate assembly for a file
 src/Public_Playlist.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/src/Public_Playlist.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Public_Playlist.cpp.s
 .PHONY : src/Public_Playlist.cpp.s
 
 src/Public_Song.o: src/Public_Song.cpp.o
@@ -329,6 +351,7 @@ src/Public_Song.o: src/Public_Song.cpp.o
 # target to build an object file
 src/Public_Song.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/src/Public_Song.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Public_Song.cpp.o
 .PHONY : src/Public_Song.cpp.o
 
 src/Public_Song.i: src/Public_Song.cpp.i
@@ -338,6 +361,7 @@ src/Public_Song.i: src/Public_Song.cpp.i
 # target to preprocess a source file
 src/Public_Song.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/src/Public_Song.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Public_Song.cpp.i
 .PHONY : src/Public_Song.cpp.i
 
 src/Public_Song.s: src/Public_Song.cpp.s
@@ -347,6 +371,7 @@ src/Public_Song.s: src/Public_Song.cpp.s
 # target to generate assembly for a file
 src/Public_Song.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/src/Public_Song.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Public_Song.cpp.s
 .PHONY : src/Public_Song.cpp.s
 
 src/User_Menu.o: src/User_Menu.cpp.o
@@ -356,6 +381,7 @@ src/User_Menu.o: src/User_Menu.cpp.o
 # target to build an object file
 src/User_Menu.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/src/User_Menu.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/User_Menu.cpp.o
 .PHONY : src/User_Menu.cpp.o
 
 src/User_Menu.i: src/User_Menu.cpp.i
@@ -365,6 +391,7 @@ src/User_Menu.i: src/User_Menu.cpp.i
 # target to preprocess a source file
 src/User_Menu.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/src/User_Menu.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/User_Menu.cpp.i
 .PHONY : src/User_Menu.cpp.i
 
 src/User_Menu.s: src/User_Menu.cpp.s
@@ -374,6 +401,7 @@ src/User_Menu.s: src/User_Menu.cpp.s
 # target to generate assembly for a file
 src/User_Menu.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/src/User_Menu.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/User_Menu.cpp.s
 .PHONY : src/User_Menu.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -403,6 +431,33 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+tests/test.o: tests/test.cpp.o
+
+.PHONY : tests/test.o
+
+# target to build an object file
+tests/test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/test.cpp.o
+.PHONY : tests/test.cpp.o
+
+tests/test.i: tests/test.cpp.i
+
+.PHONY : tests/test.i
+
+# target to preprocess a source file
+tests/test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/test.cpp.i
+.PHONY : tests/test.cpp.i
+
+tests/test.s: tests/test.cpp.s
+
+.PHONY : tests/test.s
+
+# target to generate assembly for a file
+tests/test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/test.cpp.s
+.PHONY : tests/test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -420,6 +475,7 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... output"
+	@echo "... test"
 	@echo "... src/Private_Playlist.o"
 	@echo "... src/Private_Playlist.i"
 	@echo "... src/Private_Playlist.s"
@@ -438,6 +494,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... tests/test.o"
+	@echo "... tests/test.i"
+	@echo "... tests/test.s"
 .PHONY : help
 
 

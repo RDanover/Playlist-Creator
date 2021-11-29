@@ -1,1 +1,1 @@
-/opt/rh/devtoolset-6/root/usr/bin/c++    -rdynamic CMakeFiles/test.dir/tests/test.cpp.o  -o test  lib/libgtest.a -lpthread 
+/opt/rh/devtoolset-6/root/usr/bin/c++    -rdynamic CMakeFiles/test.dir/tests/test.cpp.o CMakeFiles/test.dir/src/User_Menu.cpp.o CMakeFiles/test.dir/src/Public_Playlist.cpp.o CMakeFiles/test.dir/src/Private_Playlist.cpp.o CMakeFiles/test.dir/src/Public_Song.cpp.o CMakeFiles/test.dir/src/Private_Song.cpp.o  -o test 

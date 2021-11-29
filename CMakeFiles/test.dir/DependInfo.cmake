@@ -4,24 +4,21 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/csmajs/skang121/final-project-mgolw001-rdano001-skang121-vgondi002/tests/test.cpp" "/home/csmajs/skang121/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles/test.dir/tests/test.cpp.o"
+  "/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/Private_Playlist.cpp" "/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles/test.dir/src/Private_Playlist.cpp.o"
+  "/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/Private_Song.cpp" "/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles/test.dir/src/Private_Song.cpp.o"
+  "/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/Public_Playlist.cpp" "/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles/test.dir/src/Public_Playlist.cpp.o"
+  "/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/Public_Song.cpp" "/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles/test.dir/src/Public_Song.cpp.o"
+  "/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/User_Menu.cpp" "/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles/test.dir/src/User_Menu.cpp.o"
+  "/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/tests/test.cpp" "/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles/test.dir/tests/test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
-# Preprocessor definitions for this target.
-set(CMAKE_TARGET_DEFINITIONS_CXX
-  "gtest_disable_pthreads=ON"
-  )
-
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "googletest/googletest/include"
-  "googletest/googletest"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/csmajs/skang121/final-project-mgolw001-rdano001-skang121-vgondi002/googletest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

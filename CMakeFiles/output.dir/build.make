@@ -63,10 +63,10 @@ RM = /usr/bin/cmake3 -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002
+CMAKE_SOURCE_DIR = /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002
+CMAKE_BINARY_DIR = /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002
 
 # Include any dependencies generated for this target.
 include CMakeFiles/output.dir/depend.make
@@ -79,81 +79,81 @@ include CMakeFiles/output.dir/flags.make
 
 CMakeFiles/output.dir/src/main.cpp.o: CMakeFiles/output.dir/flags.make
 CMakeFiles/output.dir/src/main.cpp.o: src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/output.dir/src/main.cpp.o"
-	/opt/rh/devtoolset-6/root/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/output.dir/src/main.cpp.o -c /home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/output.dir/src/main.cpp.o"
+	/opt/rh/devtoolset-6/root/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/output.dir/src/main.cpp.o -c /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/main.cpp
 
 CMakeFiles/output.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/output.dir/src/main.cpp.i"
-	/opt/rh/devtoolset-6/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/src/main.cpp > CMakeFiles/output.dir/src/main.cpp.i
+	/opt/rh/devtoolset-6/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/main.cpp > CMakeFiles/output.dir/src/main.cpp.i
 
 CMakeFiles/output.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/output.dir/src/main.cpp.s"
-	/opt/rh/devtoolset-6/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/src/main.cpp -o CMakeFiles/output.dir/src/main.cpp.s
+	/opt/rh/devtoolset-6/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/main.cpp -o CMakeFiles/output.dir/src/main.cpp.s
 
 CMakeFiles/output.dir/src/User_Menu.cpp.o: CMakeFiles/output.dir/flags.make
 CMakeFiles/output.dir/src/User_Menu.cpp.o: src/User_Menu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/output.dir/src/User_Menu.cpp.o"
-	/opt/rh/devtoolset-6/root/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/output.dir/src/User_Menu.cpp.o -c /home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/src/User_Menu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/output.dir/src/User_Menu.cpp.o"
+	/opt/rh/devtoolset-6/root/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/output.dir/src/User_Menu.cpp.o -c /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/User_Menu.cpp
 
 CMakeFiles/output.dir/src/User_Menu.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/output.dir/src/User_Menu.cpp.i"
-	/opt/rh/devtoolset-6/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/src/User_Menu.cpp > CMakeFiles/output.dir/src/User_Menu.cpp.i
+	/opt/rh/devtoolset-6/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/User_Menu.cpp > CMakeFiles/output.dir/src/User_Menu.cpp.i
 
 CMakeFiles/output.dir/src/User_Menu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/output.dir/src/User_Menu.cpp.s"
-	/opt/rh/devtoolset-6/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/src/User_Menu.cpp -o CMakeFiles/output.dir/src/User_Menu.cpp.s
+	/opt/rh/devtoolset-6/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/User_Menu.cpp -o CMakeFiles/output.dir/src/User_Menu.cpp.s
 
 CMakeFiles/output.dir/src/Public_Playlist.cpp.o: CMakeFiles/output.dir/flags.make
 CMakeFiles/output.dir/src/Public_Playlist.cpp.o: src/Public_Playlist.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/output.dir/src/Public_Playlist.cpp.o"
-	/opt/rh/devtoolset-6/root/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/output.dir/src/Public_Playlist.cpp.o -c /home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/src/Public_Playlist.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/output.dir/src/Public_Playlist.cpp.o"
+	/opt/rh/devtoolset-6/root/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/output.dir/src/Public_Playlist.cpp.o -c /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/Public_Playlist.cpp
 
 CMakeFiles/output.dir/src/Public_Playlist.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/output.dir/src/Public_Playlist.cpp.i"
-	/opt/rh/devtoolset-6/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/src/Public_Playlist.cpp > CMakeFiles/output.dir/src/Public_Playlist.cpp.i
+	/opt/rh/devtoolset-6/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/Public_Playlist.cpp > CMakeFiles/output.dir/src/Public_Playlist.cpp.i
 
 CMakeFiles/output.dir/src/Public_Playlist.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/output.dir/src/Public_Playlist.cpp.s"
-	/opt/rh/devtoolset-6/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/src/Public_Playlist.cpp -o CMakeFiles/output.dir/src/Public_Playlist.cpp.s
+	/opt/rh/devtoolset-6/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/Public_Playlist.cpp -o CMakeFiles/output.dir/src/Public_Playlist.cpp.s
 
 CMakeFiles/output.dir/src/Private_Playlist.cpp.o: CMakeFiles/output.dir/flags.make
 CMakeFiles/output.dir/src/Private_Playlist.cpp.o: src/Private_Playlist.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/output.dir/src/Private_Playlist.cpp.o"
-	/opt/rh/devtoolset-6/root/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/output.dir/src/Private_Playlist.cpp.o -c /home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/src/Private_Playlist.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/output.dir/src/Private_Playlist.cpp.o"
+	/opt/rh/devtoolset-6/root/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/output.dir/src/Private_Playlist.cpp.o -c /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/Private_Playlist.cpp
 
 CMakeFiles/output.dir/src/Private_Playlist.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/output.dir/src/Private_Playlist.cpp.i"
-	/opt/rh/devtoolset-6/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/src/Private_Playlist.cpp > CMakeFiles/output.dir/src/Private_Playlist.cpp.i
+	/opt/rh/devtoolset-6/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/Private_Playlist.cpp > CMakeFiles/output.dir/src/Private_Playlist.cpp.i
 
 CMakeFiles/output.dir/src/Private_Playlist.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/output.dir/src/Private_Playlist.cpp.s"
-	/opt/rh/devtoolset-6/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/src/Private_Playlist.cpp -o CMakeFiles/output.dir/src/Private_Playlist.cpp.s
+	/opt/rh/devtoolset-6/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/Private_Playlist.cpp -o CMakeFiles/output.dir/src/Private_Playlist.cpp.s
 
 CMakeFiles/output.dir/src/Public_Song.cpp.o: CMakeFiles/output.dir/flags.make
 CMakeFiles/output.dir/src/Public_Song.cpp.o: src/Public_Song.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/output.dir/src/Public_Song.cpp.o"
-	/opt/rh/devtoolset-6/root/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/output.dir/src/Public_Song.cpp.o -c /home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/src/Public_Song.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/output.dir/src/Public_Song.cpp.o"
+	/opt/rh/devtoolset-6/root/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/output.dir/src/Public_Song.cpp.o -c /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/Public_Song.cpp
 
 CMakeFiles/output.dir/src/Public_Song.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/output.dir/src/Public_Song.cpp.i"
-	/opt/rh/devtoolset-6/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/src/Public_Song.cpp > CMakeFiles/output.dir/src/Public_Song.cpp.i
+	/opt/rh/devtoolset-6/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/Public_Song.cpp > CMakeFiles/output.dir/src/Public_Song.cpp.i
 
 CMakeFiles/output.dir/src/Public_Song.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/output.dir/src/Public_Song.cpp.s"
-	/opt/rh/devtoolset-6/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/src/Public_Song.cpp -o CMakeFiles/output.dir/src/Public_Song.cpp.s
+	/opt/rh/devtoolset-6/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/Public_Song.cpp -o CMakeFiles/output.dir/src/Public_Song.cpp.s
 
 CMakeFiles/output.dir/src/Private_Song.cpp.o: CMakeFiles/output.dir/flags.make
 CMakeFiles/output.dir/src/Private_Song.cpp.o: src/Private_Song.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/output.dir/src/Private_Song.cpp.o"
-	/opt/rh/devtoolset-6/root/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/output.dir/src/Private_Song.cpp.o -c /home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/src/Private_Song.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/output.dir/src/Private_Song.cpp.o"
+	/opt/rh/devtoolset-6/root/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/output.dir/src/Private_Song.cpp.o -c /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/Private_Song.cpp
 
 CMakeFiles/output.dir/src/Private_Song.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/output.dir/src/Private_Song.cpp.i"
-	/opt/rh/devtoolset-6/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/src/Private_Song.cpp > CMakeFiles/output.dir/src/Private_Song.cpp.i
+	/opt/rh/devtoolset-6/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/Private_Song.cpp > CMakeFiles/output.dir/src/Private_Song.cpp.i
 
 CMakeFiles/output.dir/src/Private_Song.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/output.dir/src/Private_Song.cpp.s"
-	/opt/rh/devtoolset-6/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/src/Private_Song.cpp -o CMakeFiles/output.dir/src/Private_Song.cpp.s
+	/opt/rh/devtoolset-6/root/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/src/Private_Song.cpp -o CMakeFiles/output.dir/src/Private_Song.cpp.s
 
 # Object files for target output
 output_OBJECTS = \
@@ -175,7 +175,7 @@ output: CMakeFiles/output.dir/src/Public_Song.cpp.o
 output: CMakeFiles/output.dir/src/Private_Song.cpp.o
 output: CMakeFiles/output.dir/build.make
 output: CMakeFiles/output.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable output"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable output"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/output.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -188,6 +188,6 @@ CMakeFiles/output.dir/clean:
 .PHONY : CMakeFiles/output.dir/clean
 
 CMakeFiles/output.dir/depend:
-	cd /home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002 /home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002 /home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002 /home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002 /home/csmajs/rdano001/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles/output.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002 /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002 /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002 /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002 /home/csmajs/vgond002/final-project-mgolw001-rdano001-skang121-vgondi002/CMakeFiles/output.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/output.dir/depend
 
