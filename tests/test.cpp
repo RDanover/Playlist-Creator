@@ -30,7 +30,7 @@ int main()
             cout<<"Test two: check that all playlists are printed to the user"<<endl;
             User_Menu* access_playlist_test_two = new User_Menu();
             int access_playlist_test_two_num = 3;//change this number to change number of playlists
-            for(int access_playlist_test_two_num_i=0;access_playlist_test_two_num_i<=access_playlist_test_two_num;access_playlist_test_two_num_i++){
+            for(int access_playlist_test_two_num_i=0;access_playlist_test_two_num_i<access_playlist_test_two_num;access_playlist_test_two_num_i++){
                 access_playlist_test_two->add_playlist();
             }
             int access_playlist_test_two_result = access_playlist_test_two->access_playlist(2);
