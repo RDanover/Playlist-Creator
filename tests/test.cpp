@@ -1,14 +1,9 @@
-#include "gtest/gtest.h"
-#incldue "Playlist.hpp"
+#include <iostream>
+#include "../header/User_Menu.hpp"
 
-TEST(Playlist, PlaylistDisplay) {
-    Playlist* Playlist = new Playlist("My Playlist");
-    
-    EXPECT_EQ(       
-}
+using namespace std;
 
- 
-int main(int argc, char **argv) {
-    ::testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS();
+int main()
+{
+    return 0;
 }
