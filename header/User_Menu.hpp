@@ -3,26 +3,31 @@
 
 #include <vector>
 #include <string>
-#include "Playlist.hpp"
+#include "Public_Playlist.hpp"
+#include "Private_Playlist.hpp"
 #include "Playable.hpp"
-#include "Song.hpp"
+#include "Private_Song.hpp"
+#include "Public_Song.hpp"
 
 using namespace std;
 
-class User_Menu {
-    private:
-	vector<Playable*> user_playables;	        
-    public:
-	User_Menu(){
-		user_playables.push_back(new Playlist("SICK SONGS"));
-		user_playables.push_back(new Playlist("Sad Songs"));
-		user_playables.push_back(new Playlist("Happy Songs"));
-	}
-	void display_options();
-	void create_new_playlist();
-	void delete_playlist();
-	void access_playlist();
-	void exit();
+class User_Menu
+{
+private:
+	vector<Playable *> user_playables;
+
+public:
+	void display_options(int);
+	void public_add_playlist();
+	Public_Playlist* public_create_new_playlist();
+	void public_delete_playlist();
+	void public_access_playlist();
+	
+	void private_add_playlist();
+	Private_Playlist* private_create_new_playlist();
+	void private_delete_playlist();
+	void private_access_playlist();
 };
 
 #endif // USER_MENU_HPP
+

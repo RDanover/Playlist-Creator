@@ -4,9 +4,9 @@
 #include <string>
 #include "abs_factory.hpp"
 
-class Public_Factory: public Abs_Factory{
-	virtual void create_playlist(){}
-	virtual void create_song(){}
-
+class Public_Factory : public Abstract_Factory
+{
+	virtual void create_playlist() {}
+	virtual void create_song() {}
 };
 #endif
