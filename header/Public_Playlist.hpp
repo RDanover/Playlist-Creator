@@ -33,6 +33,7 @@ public:
 	void display_songs();
 	bool song_exists(Playable *curr);
 	void deleteP(); // helper function for delete  playlist
+	int hide_unhide_song(int tn, string input);//testing purposes only
 };
 
 #endif // PUBLIC_PLAYLIST_HPP
