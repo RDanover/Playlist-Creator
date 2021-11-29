@@ -30,7 +30,7 @@ public:
 	void private_access_playlist();
 	
 	int access_playlist(int); //testing purposes only
-	void add_playlist() //testing purposes only
+	void add_playlist(); //testing purposes only
 };
 
 #endif // USER_MENU_HPP
