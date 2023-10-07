@@ -20,7 +20,7 @@ Users can also choose to play their entire playlist, shuffle play their playlist
 
 ## Phase II
 
-###Class Diagram
+Class Diagram
 ![Screenshot (12)](https://user-images.githubusercontent.com/60625627/143936351-66a09c81-0aee-4b09-80af-cbb76e6b7e02.png)
 
 ### Description of diagram
